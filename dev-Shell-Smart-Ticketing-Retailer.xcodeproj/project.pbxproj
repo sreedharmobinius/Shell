@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF20975424726D6B0007E4DA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF20975324726D6B0007E4DA /* Home.storyboard */; };
+		AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6880D32473F19900D50BAA /* HomeViewController.swift */; };
+		AF6880DA2473F53A00D50BAA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */; };
+		AF6880DB2473F53A00D50BAA /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */; };
 		AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF727587246AB385002AD121 /* PhoneNumberViewController.swift */; };
 		AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF727589246AB3BE002AD121 /* PassWordViewController.swift */; };
 		AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72758B246AB3E9002AD121 /* LogInViewController.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF20975324726D6B0007E4DA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		AF6880D32473F19900D50BAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		AF727587246AB385002AD121 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		AF727589246AB3BE002AD121 /* PassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordViewController.swift; sourceTree = "<group>"; };
 		AF72758B246AB3E9002AD121 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6880D22473F18200D50BAA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AF6880D32473F19900D50BAA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AF6880D52473F4B100D50BAA /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */,
+				AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
 		AF69538F246A5A07003D72B8 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +115,7 @@
 		AF727583246AB279002AD121 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				AF6880D22473F18200D50BAA /* Home */,
 				AF69538F246A5A07003D72B8 /* Login */,
 			);
 			path = ViewControllers;
@@ -107,6 +133,7 @@
 			children = (
 				AF8C82B52465355F00BE3508 /* Main.storyboard */,
 				AF744C2224694CBF00F535F4 /* Login.storyboard */,
+				AF20975324726D6B0007E4DA /* Home.storyboard */,
 				AF8C82BD2465356000BE3508 /* LaunchScreen.storyboard */,
 			);
 			path = "Story Board";
@@ -139,6 +166,7 @@
 				AF7490D92469788800DDC5F0 /* Story Board */,
 				AF727583246AB279002AD121 /* ViewControllers */,
 				AF727584246AB292002AD121 /* Models */,
+				AF6880D52473F4B100D50BAA /* CustomCell */,
 				AF8C82BB2465356000BE3508 /* Assets.xcassets */,
 				AF8C82C02465356000BE3508 /* Info.plist */,
 				AF8C82B82465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld */,
@@ -237,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF744C2324694CBF00F535F4 /* Login.storyboard in Resources */,
+				AF20975424726D6B0007E4DA /* Home.storyboard in Resources */,
 				AF8C82BF2465356000BE3508 /* LaunchScreen.storyboard in Resources */,
 				AF8C82BC2465356000BE3508 /* Assets.xcassets in Resources */,
+				AF6880DB2473F53A00D50BAA /* HomeTableViewCell.xib in Resources */,
 				AF8C82B72465355F00BE3508 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +293,9 @@
 				AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */,
 				AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */,
 				AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */,
+				AF6880DA2473F53A00D50BAA /* HomeTableViewCell.swift in Sources */,
 				AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */,
+				AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */,
 				AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */,
 				AF8C82BA2465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld in Sources */,
 				AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */,
