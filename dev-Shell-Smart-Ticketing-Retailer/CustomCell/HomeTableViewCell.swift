@@ -22,9 +22,7 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-//        self.lblFeedBackBadge.layer.cornerRadius = self.lblFeedBackBadge.frame.width/2
-        self.lblFeedBackBadge.layer.cornerRadius = 5
-
+        self.lblFeedBackBadge.layer.cornerRadius = self.lblFeedBackBadge.frame.width/2
         self.lblFeedBackBadge.layer.masksToBounds = true
     }
 

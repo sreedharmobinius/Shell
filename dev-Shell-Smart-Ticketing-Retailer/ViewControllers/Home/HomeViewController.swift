@@ -25,15 +25,27 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
-
         // Do any additional setup after loading the view.
     }
     
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 5
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           5
+           1
        }
-       
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        return view
+    }
+    
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let cell:HomeTableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! HomeTableViewCell
 
@@ -53,12 +65,12 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         settingsActionSheet.view.tintColor = UIColor.black
         if let firstSubview = settingsActionSheet.view.subviews.first, let alertContentView = firstSubview.subviews.first {
             for view in alertContentView.subviews {
-                view.backgroundColor = UIColor(red: 252, green: 207, blue: 0, alpha: 1)
+                view.backgroundColor = UIColor.systemYellow
             }
         }
         
 
-        settingsActionSheet.addAction(UIAlertAction(title:"View Station Details         >", style:UIAlertAction.Style.default, handler:{ action in
+        settingsActionSheet.addAction(UIAlertAction(title:"View Station Details", style:UIAlertAction.Style.default, handler:{ action in
         }))
         settingsActionSheet.addAction(UIAlertAction(title:"Cancel", style:UIAlertAction.Style.cancel, handler:nil))
         present(settingsActionSheet, animated:true, completion:nil)
