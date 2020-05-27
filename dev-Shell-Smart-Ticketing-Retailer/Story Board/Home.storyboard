@@ -290,10 +290,10 @@
             </objects>
             <point key="canvasLocation" x="-1558.125" y="577.81690140845069"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar View Controller-->
         <scene sceneID="HY0-WK-01T">
             <objects>
-                <tabBarController id="NEp-zo-WMa" sceneMemberID="viewController">
+                <tabBarController id="NEp-zo-WMa" customClass="HomeTabBarViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="la7-ev-PMq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -309,7 +309,7 @@
                     <connections>
                         <segue destination="6Pl-h0-KkL" kind="relationship" relationship="viewControllers" id="dov-Rd-0vn"/>
                         <segue destination="hSH-V9-5qo" kind="relationship" relationship="viewControllers" id="UEH-z5-59t"/>
-                        <segue destination="RrR-gN-Ep3" kind="relationship" relationship="viewControllers" id="1gb-vZ-9pZ"/>
+                        <segue destination="seo-lk-bAL" kind="relationship" relationship="viewControllers" id="dDx-BL-9Sy"/>
                         <segue destination="8JC-Io-dvu" kind="relationship" relationship="viewControllers" id="tea-eU-vJa"/>
                         <segue destination="MNq-y6-83b" kind="relationship" relationship="viewControllers" id="aHh-Hi-4SW"/>
                     </connections>
@@ -335,25 +335,6 @@
             <point key="canvasLocation" x="433" y="578"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="v3G-Gp-LDl">
-            <objects>
-                <viewController id="RrR-gN-Ep3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mJA-zA-VxJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="X4c-Ng-bhZ"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="icon_new_workorder" id="ZQZ-qA-MOX">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jCd-J0-Tcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-242" y="578"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="Rgx-p4-j3U">
             <objects>
                 <viewController id="MNq-y6-83b" sceneMemberID="viewController">
@@ -368,6 +349,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5H-q6-623" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1148" y="578"/>
+        </scene>
+        <!--New Work Order View Controller-->
+        <scene sceneID="oge-AW-dcg">
+            <objects>
+                <viewController storyboardIdentifier="NewWorkOrder" useStoryboardIdentifierAsRestorationIdentifier="YES" id="seo-lk-bAL" customClass="NewWorkOrderViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bc7-cB-0c0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="OC3-A6-H5K"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icon_new_workorder" id="CUp-CP-Vi4"/>
+                    <navigationItem key="navigationItem" id="6ec-25-5RZ"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHw-Uw-arP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-249" y="568"/>
         </scene>
     </scenes>
     <resources>

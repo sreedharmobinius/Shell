@@ -170,20 +170,44 @@
                             </view>
                         </subviews>
                     </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="-----------------------------------------------------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gm4-8b-LIl">
+                        <rect key="frame" x="213" y="64" width="96" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="NC2-8c-Ovq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="7"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----------------------------------------------------" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbb-sv-XSh">
+                        <rect key="frame" x="11" y="64" width="98.5" height="2"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="PNa-cM-t4A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="7"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="SC3-ht-EQI" secondAttribute="trailing" id="A7B-Ir-OwN"/>
+                    <constraint firstItem="Gm4-8b-LIl" firstAttribute="leading" secondItem="NPO-NP-UHs" secondAttribute="trailing" constant="12" id="Cky-aQ-J5l"/>
                     <constraint firstItem="NPO-NP-UHs" firstAttribute="top" secondItem="HaL-uu-0fy" secondAttribute="top" constant="59" id="DSP-HB-7wo"/>
                     <constraint firstItem="OAs-D5-A5V" firstAttribute="top" secondItem="8ej-Cp-4JZ" secondAttribute="bottom" constant="1" id="K1b-Pi-Wqg"/>
                     <constraint firstItem="8ej-Cp-4JZ" firstAttribute="top" secondItem="HaL-uu-0fy" secondAttribute="top" constant="16" id="L5S-Wf-OQ2"/>
                     <constraint firstItem="2kh-TK-pSH" firstAttribute="leading" secondItem="HaL-uu-0fy" secondAttribute="leading" constant="27" id="Mjp-cc-GO7"/>
+                    <constraint firstItem="Gm4-8b-LIl" firstAttribute="centerY" secondItem="NPO-NP-UHs" secondAttribute="centerY" id="Rdu-G8-KvV"/>
+                    <constraint firstAttribute="trailing" secondItem="Gm4-8b-LIl" secondAttribute="trailing" constant="11" id="X6U-8Y-aA9"/>
                     <constraint firstItem="OAs-D5-A5V" firstAttribute="leading" secondItem="8ej-Cp-4JZ" secondAttribute="leading" id="XjT-Cc-xMD"/>
                     <constraint firstItem="SC3-ht-EQI" firstAttribute="top" secondItem="HaL-uu-0fy" secondAttribute="top" id="cqs-GI-2uE"/>
                     <constraint firstItem="81c-Dv-Lez" firstAttribute="top" secondItem="NPO-NP-UHs" secondAttribute="bottom" constant="5" id="cwB-pb-alL"/>
                     <constraint firstAttribute="bottomMargin" secondItem="81c-Dv-Lez" secondAttribute="bottom" constant="7" id="jZc-mS-wXB"/>
                     <constraint firstItem="NPO-NP-UHs" firstAttribute="centerX" secondItem="HaL-uu-0fy" secondAttribute="centerX" id="kJT-aU-fR1"/>
+                    <constraint firstItem="Kbb-sv-XSh" firstAttribute="leading" secondItem="HaL-uu-0fy" secondAttribute="leading" constant="11" id="kSC-KT-PaD"/>
                     <constraint firstItem="2kh-TK-pSH" firstAttribute="top" secondItem="HaL-uu-0fy" secondAttribute="top" constant="20" id="nsc-gN-UMC"/>
                     <constraint firstAttribute="trailing" secondItem="81c-Dv-Lez" secondAttribute="trailing" constant="30" id="oYk-e9-umc"/>
+                    <constraint firstItem="Kbb-sv-XSh" firstAttribute="centerY" secondItem="NPO-NP-UHs" secondAttribute="centerY" id="tEg-YQ-UTK"/>
+                    <constraint firstItem="NPO-NP-UHs" firstAttribute="leading" secondItem="Kbb-sv-XSh" secondAttribute="trailing" constant="10" id="uaT-3x-8m2"/>
                     <constraint firstItem="81c-Dv-Lez" firstAttribute="leading" secondItem="HaL-uu-0fy" secondAttribute="leading" constant="30" id="wMi-pB-n9k"/>
                     <constraint firstItem="8ej-Cp-4JZ" firstAttribute="leading" secondItem="2kh-TK-pSH" secondAttribute="trailing" constant="18" id="yyf-JS-nUM"/>
                 </constraints>

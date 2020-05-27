@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="34"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shell Bellendur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-g8-eaN">
+                    <rect key="frame" x="25.5" y="0.0" width="85.5" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="RfJ-rb-jFE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New work order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydP-GS-Sha">
+                    <rect key="frame" x="13" y="18" width="110" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="dkU-hF-CTw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_fuel" translatesAutoresizingMaskIntoConstraints="NO" id="JyL-HO-5HE">
+                    <rect key="frame" x="9" y="1.5" width="10" height="11"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="gn3-gc-uJv"/>
+                        <constraint firstAttribute="height" constant="11" id="rp6-fO-JGB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.88235294119999996" green="0.094117647060000004" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ydP-GS-Sha" secondAttribute="bottom" id="5h4-hm-6rn"/>
+                <constraint firstItem="ydP-GS-Sha" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="68P-7B-gqw"/>
+                <constraint firstItem="ydP-GS-Sha" firstAttribute="top" secondItem="OTX-g8-eaN" secondAttribute="bottom" constant="4" id="Aar-VH-y9a"/>
+                <constraint firstItem="JyL-HO-5HE" firstAttribute="centerY" secondItem="OTX-g8-eaN" secondAttribute="centerY" id="HCe-rg-t3w"/>
+                <constraint firstItem="OTX-g8-eaN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="bvc-W6-Y3Z"/>
+                <constraint firstItem="OTX-g8-eaN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jdM-qv-XYM"/>
+                <constraint firstItem="OTX-g8-eaN" firstAttribute="leading" secondItem="JyL-HO-5HE" secondAttribute="trailing" constant="6.5" id="vbg-GB-7Lk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="84.057971014492765" y="164.73214285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_fuel" width="30" height="33"/>
+    </resources>
+</document>
