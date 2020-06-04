@@ -42,8 +42,9 @@ class NewWorkOrderViewController: UIViewController, UITableViewDelegate, UITable
        }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrder1")
+        let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetail") as! NewWorkOrderDetailViewController
         controller.modalPresentationStyle = .fullScreen
+        controller.prevVC = self
         self.present(controller, animated: true, completion: nil)
 
     }

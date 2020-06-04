@@ -10,5 +10,7 @@ import UIKit
 
 class NewWorkOrderDetailCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var placeholderImage: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     
 }

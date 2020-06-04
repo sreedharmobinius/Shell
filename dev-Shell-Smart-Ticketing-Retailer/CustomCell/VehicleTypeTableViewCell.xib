@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VehicleTypeTableViewCell" id="KGk-i7-Jjw" customClass="VehicleTypeTableViewCell" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfo-AM-js1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Four Wheeler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIS-W2-Q62">
+                                <rect key="frame" x="120" y="27" width="93.5" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="MT5-1X-RCR"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="hF4-lZ-LNB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNm-fc-fD4">
+                                <rect key="frame" x="270" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="UBg-8a-8nm"/>
+                                    <constraint firstAttribute="width" constant="50" id="iKY-U2-sMr"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="pencil" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_diesel_dispenser" translatesAutoresizingMaskIntoConstraints="NO" id="mkn-kg-WWP">
+                                <rect key="frame" x="50" y="5" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="VRn-Au-VBU"/>
+                                    <constraint firstAttribute="height" constant="60" id="xvp-3t-1ON"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mkn-kg-WWP" firstAttribute="leading" secondItem="hfo-AM-js1" secondAttribute="leading" constant="50" id="3qo-7g-c4c"/>
+                            <constraint firstItem="MIS-W2-Q62" firstAttribute="leading" secondItem="mkn-kg-WWP" secondAttribute="trailing" constant="10" id="Glf-Gz-lal"/>
+                            <constraint firstAttribute="trailing" secondItem="wNm-fc-fD4" secondAttribute="trailing" id="MiD-2m-r2Y"/>
+                            <constraint firstAttribute="bottom" secondItem="mkn-kg-WWP" secondAttribute="bottom" constant="5" id="Sni-so-uCz"/>
+                            <constraint firstItem="mkn-kg-WWP" firstAttribute="top" secondItem="hfo-AM-js1" secondAttribute="top" constant="5" id="gKy-Cb-u78"/>
+                            <constraint firstItem="mkn-kg-WWP" firstAttribute="centerY" secondItem="hfo-AM-js1" secondAttribute="centerY" id="rUW-QI-ppN"/>
+                            <constraint firstItem="MIS-W2-Q62" firstAttribute="centerY" secondItem="hfo-AM-js1" secondAttribute="centerY" id="sKN-iw-nTZ"/>
+                            <constraint firstItem="wNm-fc-fD4" firstAttribute="top" secondItem="hfo-AM-js1" secondAttribute="top" id="vvH-GJ-sfp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hfo-AM-js1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="S8c-b4-3jU"/>
+                    <constraint firstAttribute="bottom" secondItem="hfo-AM-js1" secondAttribute="bottom" id="Vyc-8I-jMf"/>
+                    <constraint firstItem="hfo-AM-js1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bST-3M-jjZ"/>
+                    <constraint firstAttribute="trailing" secondItem="hfo-AM-js1" secondAttribute="trailing" id="vDZ-2z-E2E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblDescp" destination="MIS-W2-Q62" id="Sjs-xb-4Gy"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="131"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_diesel_dispenser" width="180" height="180"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
