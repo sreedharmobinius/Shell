@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -130,7 +129,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="VIEW FAILURE MODES"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-F3-EKH">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-F3-EKH">
                                 <rect key="frame" x="270" y="0.0" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="GnA-uQ-U5i"/>
@@ -139,6 +138,13 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="pencil" catalog="system"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Group" translatesAutoresizingMaskIntoConstraints="NO" id="hso-rk-NVH">
+                                <rect key="frame" x="20" y="34" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="F1O-UO-H8I"/>
+                                    <constraint firstAttribute="height" constant="13" id="vgC-jn-RIv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -158,6 +164,7 @@
                             <constraint firstAttribute="trailing" secondItem="QF2-a6-Irx" secondAttribute="trailing" constant="30" id="KEW-sC-jnF"/>
                             <constraint firstAttribute="trailing" secondItem="8JE-F3-EKH" secondAttribute="trailing" id="Lx1-xl-JFT"/>
                             <constraint firstItem="aSV-ZC-Hhe" firstAttribute="top" secondItem="kAk-0A-yB6" secondAttribute="top" constant="10" id="Meq-LN-lNl"/>
+                            <constraint firstItem="hso-rk-NVH" firstAttribute="centerY" secondItem="aSV-ZC-Hhe" secondAttribute="centerY" id="Nb2-TQ-BiR"/>
                             <constraint firstItem="OID-ii-fzL" firstAttribute="bottom" secondItem="aSV-ZC-Hhe" secondAttribute="bottom" id="PAc-z0-rmz"/>
                             <constraint firstItem="j4S-UD-wPD" firstAttribute="leading" secondItem="aSV-ZC-Hhe" secondAttribute="trailing" constant="10" id="SkI-8M-rSc"/>
                             <constraint firstItem="thm-CQ-fD8" firstAttribute="bottom" secondItem="OID-ii-fzL" secondAttribute="bottom" id="TRA-Y9-oNA"/>
@@ -172,6 +179,7 @@
                             <constraint firstItem="OID-ii-fzL" firstAttribute="leading" secondItem="yAL-ej-UXd" secondAttribute="leading" id="fsw-ER-DVB"/>
                             <constraint firstItem="p6K-Xy-lmq" firstAttribute="top" secondItem="L9o-Dl-Swu" secondAttribute="bottom" constant="6" id="h5P-6p-ouT"/>
                             <constraint firstItem="ihL-Xx-Uix" firstAttribute="top" secondItem="LAK-bz-4wZ" secondAttribute="top" id="sHC-sZ-buv"/>
+                            <constraint firstItem="hso-rk-NVH" firstAttribute="leading" secondItem="kAk-0A-yB6" secondAttribute="leading" constant="20" id="tqK-1l-0Jt"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -184,7 +192,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnEdit" destination="8JE-F3-EKH" id="42B-MY-b9C"/>
                 <outlet property="btnViewFailureModes" destination="QF2-a6-Irx" id="jMY-xF-dL2"/>
+                <outlet property="imgDot" destination="hso-rk-NVH" id="34O-ys-BSC"/>
                 <outlet property="lblDispenser" destination="j4S-UD-wPD" id="3Qr-Wv-rpQ"/>
                 <outlet property="lblMake" destination="p6K-Xy-lmq" id="C16-Pp-ccf"/>
                 <outlet property="lblModel" destination="thm-CQ-fD8" id="4h9-vE-R4h"/>
@@ -194,6 +204,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_Group" width="13" height="13"/>
         <image name="icon_diesel_dispenser" width="180" height="180"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>

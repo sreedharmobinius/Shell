@@ -11,6 +11,8 @@ import UIKit
 class VehicleTypeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblDescp: UILabel!
+    @IBOutlet weak var imgDot: UIImageView!
+    @IBOutlet weak var btnEdit: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

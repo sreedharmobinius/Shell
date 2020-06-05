@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectedAreaView: UIView {
+class SelectedAreaView: UITableViewCell {
 
     @IBOutlet weak var lblSelectedArea: UILabel!
     /*

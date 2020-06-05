@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -42,6 +41,13 @@
                     <rect key="frame" x="50" y="48" width="42" height="2"/>
                     <color key="backgroundColor" red="0.88235294119999996" green="0.094117647060000004" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Group" translatesAutoresizingMaskIntoConstraints="NO" id="ajx-4g-Ylj">
+                    <rect key="frame" x="20" y="18.5" width="13" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="5oB-Ab-UeV"/>
+                        <constraint firstAttribute="width" constant="13" id="AGx-8v-JVx"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -49,8 +55,10 @@
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7CO-kZ-RvU"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="leading" secondItem="YjK-gS-Qjk" secondAttribute="leading" id="JIX-5B-h0K"/>
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LAI-Sp-yYv"/>
+                <constraint firstItem="ajx-4g-Ylj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Mr9-Kr-r0W"/>
                 <constraint firstItem="YjK-gS-Qjk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="Rf4-nS-rnE"/>
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WHX-zX-19O"/>
+                <constraint firstItem="ajx-4g-Ylj" firstAttribute="centerY" secondItem="YjK-gS-Qjk" secondAttribute="centerY" id="m7Q-xO-FMO"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="trailing" secondItem="YjK-gS-Qjk" secondAttribute="trailing" id="sBO-Ii-gsz"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="sa4-OF-VGF"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="top" secondItem="YjK-gS-Qjk" secondAttribute="bottom" constant="15" id="u1i-Ty-kak"/>
@@ -64,6 +72,7 @@
         </view>
     </objects>
     <resources>
+        <image name="icon_Group" width="13" height="13"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
     </resources>
 </document>

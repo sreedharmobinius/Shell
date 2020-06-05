@@ -12,6 +12,7 @@ class SelectDispensorCategoryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblCategory: UILabel!
     @IBOutlet weak var btnEdit: UIButton!
+    @IBOutlet weak var imgDot: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,4 +24,6 @@ class SelectDispensorCategoryTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func EditButtonClicked(_ sender: Any) {
+    }
 }

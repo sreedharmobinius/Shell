@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,7 +39,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN9-Te-lsD">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN9-Te-lsD">
                                 <rect key="frame" x="270" y="0.0" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="HcC-eP-cu5"/>
@@ -48,18 +47,30 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="EditButtonClicked:" destination="vjh-IG-429" eventType="touchUpInside" id="pC2-bu-TVl"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Group" translatesAutoresizingMaskIntoConstraints="NO" id="zkU-Kd-NbQ">
+                                <rect key="frame" x="20" y="18.5" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="RNH-iI-C1k"/>
+                                    <constraint firstAttribute="width" constant="13" id="Y0z-8f-uai"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QN9-Te-lsD" firstAttribute="top" secondItem="xxv-zc-abo" secondAttribute="top" id="63c-sD-DhA"/>
                             <constraint firstItem="ScS-Wf-X2G" firstAttribute="leading" secondItem="xxv-zc-abo" secondAttribute="leading" constant="50" id="ANt-15-dZp"/>
                             <constraint firstItem="Xpe-gS-d4z" firstAttribute="centerY" secondItem="xxv-zc-abo" secondAttribute="centerY" id="N5A-WT-N4N"/>
+                            <constraint firstItem="zkU-Kd-NbQ" firstAttribute="centerY" secondItem="xxv-zc-abo" secondAttribute="centerY" id="N6Y-le-zFz"/>
                             <constraint firstItem="ScS-Wf-X2G" firstAttribute="centerY" secondItem="xxv-zc-abo" secondAttribute="centerY" id="aig-j5-KlI"/>
                             <constraint firstItem="ScS-Wf-X2G" firstAttribute="top" secondItem="xxv-zc-abo" secondAttribute="top" constant="18" id="dRt-QA-c8J"/>
                             <constraint firstAttribute="trailing" secondItem="QN9-Te-lsD" secondAttribute="trailing" id="iNL-Ou-sWC"/>
                             <constraint firstItem="Xpe-gS-d4z" firstAttribute="leading" secondItem="ScS-Wf-X2G" secondAttribute="trailing" constant="14" id="rFv-46-e4A"/>
                             <constraint firstItem="Xpe-gS-d4z" firstAttribute="top" secondItem="xxv-zc-abo" secondAttribute="top" constant="15" id="xhY-sk-LTE"/>
+                            <constraint firstItem="zkU-Kd-NbQ" firstAttribute="leading" secondItem="xxv-zc-abo" secondAttribute="leading" constant="20" id="zhW-HT-zaT"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -71,13 +82,15 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="btnEdit" destination="QN9-Te-lsD" id="no3-UW-WH7"/>
+                <outlet property="btnEdit" destination="QN9-Te-lsD" id="sbU-7L-WGC"/>
+                <outlet property="imgDot" destination="zkU-Kd-NbQ" id="BKK-XB-vGV"/>
                 <outlet property="lblCategory" destination="Xpe-gS-d4z" id="BaO-CT-kxt"/>
             </connections>
             <point key="canvasLocation" x="-652" y="-163"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_Group" width="13" height="13"/>
         <image name="icon_interface " width="45" height="45"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>

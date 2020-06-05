@@ -19,13 +19,7 @@ class NewWorkOrderViewController: UIViewController, UITableViewDelegate, UITable
         tableView.delegate = self
         tableView.dataSource = self
         self.navigationController?.isNavigationBarHidden = true
-//        let path = UIBezierPath(roundedRect:self.view.bounds, byRoundingCorners:[UIRectCorner.topRight, .topLeft], cornerRadii: CGSize(width: 50, height: 50))
-//
-//
-//        let maskLayer = CAShapeLayer()
-//        maskLayer.path = path.cgPath
-//        self.containerView.layer.mask = maskLayer
-        // Do any additional setup after loading the view.
+
         self.containerView.addTopRoundedCornerToView(targetView: self.containerView, desiredCurve: 0.6)
 
     }
@@ -63,7 +57,7 @@ extension UIView {
         let offset:CGFloat =  targetView!.frame.width/desiredCurve!
         let bounds: CGRect = targetView!.bounds
 
-        let rectBounds: CGRect = CGRect(x: bounds.origin.x, y: bounds.origin.y+bounds.size.height / 2, width: bounds.size.width, height: bounds.size.height)
+        let rectBounds: CGRect = CGRect(x: bounds.origin.x, y: bounds.origin.y+bounds.size.height / 2, width: bounds.size.width+bounds.size.height / 2, height: bounds.size.height)
 
         let rectPath: UIBezierPath = UIBezierPath(rect: rectBounds)
         let ovalBounds: CGRect = CGRect(x: bounds.origin.x - offset / 2, y: bounds.origin.y, width: bounds.size.width + offset, height: bounds.size.height)

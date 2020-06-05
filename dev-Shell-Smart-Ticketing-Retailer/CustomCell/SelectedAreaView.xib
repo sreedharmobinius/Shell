@@ -2,9 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,62 +16,74 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="9CI-ah-CCX" customClass="SelectedAreaView" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelectedAreaView" id="oaZ-VO-0AB" customClass="SelectedAreaView" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_shapes" translatesAutoresizingMaskIntoConstraints="NO" id="4yB-Aq-292">
-                    <rect key="frame" x="50" y="15" width="20" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="20" id="EMs-Pv-oBL"/>
-                        <constraint firstAttribute="height" constant="20" id="lh1-FL-EQp"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispensors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHF-8n-bD5">
-                    <rect key="frame" x="84" y="25" width="76" height="16"/>
-                    <constraints>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="fN4-aE-Iz0"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXB-RL-KlA">
-                    <rect key="frame" x="84" y="10" width="26" height="14"/>
-                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVj-Ny-k5C">
-                    <rect key="frame" x="364" y="0.0" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="Tqg-6E-LWQ"/>
-                        <constraint firstAttribute="height" constant="50" id="x9f-US-3kx"/>
-                    </constraints>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" image="pencil" catalog="system"/>
-                </button>
-            </subviews>
-            <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="4yB-Aq-292" firstAttribute="leading" secondItem="9CI-ah-CCX" secondAttribute="leading" constant="50" id="0xA-f4-lBQ"/>
-                <constraint firstItem="vHF-8n-bD5" firstAttribute="top" secondItem="pXB-RL-KlA" secondAttribute="bottom" constant="1" id="711-gS-568"/>
-                <constraint firstItem="4yB-Aq-292" firstAttribute="centerY" secondItem="9CI-ah-CCX" secondAttribute="centerY" id="QAR-Mk-1cd"/>
-                <constraint firstItem="pXB-RL-KlA" firstAttribute="leading" secondItem="4yB-Aq-292" secondAttribute="trailing" constant="14" id="RzM-SZ-Eak"/>
-                <constraint firstAttribute="trailing" secondItem="nVj-Ny-k5C" secondAttribute="trailing" id="V0Y-KX-wFJ"/>
-                <constraint firstItem="nVj-Ny-k5C" firstAttribute="top" secondItem="9CI-ah-CCX" secondAttribute="top" id="YSn-Nn-RAu"/>
-                <constraint firstItem="vHF-8n-bD5" firstAttribute="leading" secondItem="pXB-RL-KlA" secondAttribute="leading" id="aOK-D9-EBn"/>
-                <constraint firstItem="pXB-RL-KlA" firstAttribute="top" secondItem="9CI-ah-CCX" secondAttribute="top" constant="10" id="nJ2-De-l26"/>
-            </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="e8u-hM-E1S"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oaZ-VO-0AB" id="IOz-Mg-qGz">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispensors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11F-Mv-4qY">
+                        <rect key="frame" x="84" y="25" width="76" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="GyW-XK-dLh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_shapes" translatesAutoresizingMaskIntoConstraints="NO" id="KfW-hg-io2">
+                        <rect key="frame" x="50" y="15" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="PHk-xw-ocE"/>
+                            <constraint firstAttribute="height" constant="20" id="nF6-h8-v61"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_Group" translatesAutoresizingMaskIntoConstraints="NO" id="Pg2-lf-d51">
+                        <rect key="frame" x="20" y="18.5" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="13" id="Ayg-6g-tdP"/>
+                            <constraint firstAttribute="height" constant="13" id="eBw-8z-JaN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bff-hb-P2j">
+                        <rect key="frame" x="84" y="10" width="26" height="14"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF4-je-BIE">
+                        <rect key="frame" x="364" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="DPK-PA-klP"/>
+                            <constraint firstAttribute="width" constant="50" id="pcc-Kz-XTY"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="pencil" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RF4-je-BIE" firstAttribute="top" secondItem="IOz-Mg-qGz" secondAttribute="top" id="05h-5l-Vg1"/>
+                    <constraint firstItem="KfW-hg-io2" firstAttribute="centerY" secondItem="IOz-Mg-qGz" secondAttribute="centerY" id="9xY-JP-Ego"/>
+                    <constraint firstItem="11F-Mv-4qY" firstAttribute="leading" secondItem="Bff-hb-P2j" secondAttribute="leading" id="G0E-OM-76k"/>
+                    <constraint firstAttribute="trailing" secondItem="RF4-je-BIE" secondAttribute="trailing" id="Nvt-Bt-qaa"/>
+                    <constraint firstItem="KfW-hg-io2" firstAttribute="leading" secondItem="IOz-Mg-qGz" secondAttribute="leading" constant="50" id="Q7G-7K-0q1"/>
+                    <constraint firstItem="Bff-hb-P2j" firstAttribute="top" secondItem="IOz-Mg-qGz" secondAttribute="top" constant="10" id="dfx-h0-wXb"/>
+                    <constraint firstAttribute="bottom" secondItem="11F-Mv-4qY" secondAttribute="bottom" constant="9" id="f2b-3D-r9M"/>
+                    <constraint firstItem="Bff-hb-P2j" firstAttribute="leading" secondItem="KfW-hg-io2" secondAttribute="trailing" constant="14" id="n0F-8l-mrr"/>
+                    <constraint firstItem="Pg2-lf-d51" firstAttribute="leading" secondItem="IOz-Mg-qGz" secondAttribute="leading" constant="20" id="nVa-0V-AB3"/>
+                    <constraint firstItem="Pg2-lf-d51" firstAttribute="centerY" secondItem="KfW-hg-io2" secondAttribute="centerY" id="qCO-2s-o2N"/>
+                    <constraint firstItem="11F-Mv-4qY" firstAttribute="top" secondItem="Bff-hb-P2j" secondAttribute="bottom" constant="1" id="yc2-NB-dTo"/>
+                </constraints>
+            </tableViewCellContentView>
             <connections>
-                <outlet property="lblSelectedArea" destination="vHF-8n-bD5" id="bES-49-Ete"/>
+                <outlet property="lblSelectedArea" destination="11F-Mv-4qY" id="Xdl-3j-vdc"/>
             </connections>
-            <point key="canvasLocation" x="832" y="-90"/>
-        </view>
+            <point key="canvasLocation" x="695.6521739130435" y="-222.32142857142856"/>
+        </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_Group" width="13" height="13"/>
         <image name="icon_shapes" width="60" height="60"/>
         <image name="pencil" catalog="system" width="64" height="56"/>
     </resources>

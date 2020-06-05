@@ -19,6 +19,8 @@ class DispenserTableViewCell: UITableViewCell {
     @IBOutlet weak var lblModel: UILabel!
     
     @IBOutlet weak var btnViewFailureModes: UIButton!
+    @IBOutlet weak var imgDot: UIImageView!
+    @IBOutlet weak var btnEdit: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

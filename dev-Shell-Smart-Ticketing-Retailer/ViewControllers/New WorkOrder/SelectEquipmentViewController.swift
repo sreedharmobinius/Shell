@@ -11,19 +11,19 @@ import UIKit
 class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
-    var arrayHeader = [1,1,1,1,1] // 2 Array of header, change it as per your uses
-    var headerView : UIView?
+    var arrayHeader = [1,1,1,1,1]
+    var headerView : UITableViewCell?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         let lineLayer = CAShapeLayer()
         lineLayer.strokeColor = UIColor.blue.cgColor
-        lineLayer.lineWidth = 2
+        lineLayer.lineWidth = 1
         lineLayer.lineDashPattern = [4,4]
         let path = CGMutablePath()
-        path.addLines(between: [CGPoint(x: 30, y: 100),
-                                CGPoint(x: 30, y: 300)])
+        path.addLines(between: [CGPoint(x: 27, y: 100),
+                                CGPoint(x: 27, y: 300)])
         lineLayer.path = path
         self.view.layer.addSublayer(lineLayer)
         
@@ -37,6 +37,7 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         tableView.register(UINib(nibName: "DispenserTableViewCell", bundle: nil), forCellReuseIdentifier: "DispenserTableViewCell")
         tableView.register(UINib(nibName: "SelectDispensorCategoryCell", bundle: nil), forCellReuseIdentifier: "SelectDispensorCategoryCell")
         tableView.register(UINib(nibName: "VehicleTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "VehicleTypeTableViewCell")
+        tableView.register(UINib(nibName: "SelectedAreaView", bundle: nil), forCellReuseIdentifier: "SelectedAreaView")
         
     }
     
@@ -49,15 +50,18 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         case 1:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: "SelectDispensorCategoryCell", for: indexPath) as! SelectDispensorCategoryTableViewCell
             customCell.lblCategory.text = "Electrical"
+            customCell.imgDot.isHidden = true
             cell = customCell
             break
         case 2:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: "DispenserTableViewCell", for: indexPath) as! DispenserTableViewCell
+            customCell.imgDot.isHidden = true
             cell = customCell
             break
         case 3:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTypeTableViewCell", for: indexPath) as! VehicleTypeTableViewCell
             customCell.lblDescp.text = "Four Wheeler"
+            customCell.imgDot.isHidden = true
             cell = customCell
             break
         case 4:
@@ -65,16 +69,16 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
                 let  customCell = tableView.dequeueReusableCell(withIdentifier: "DispenserTableViewCell", for: indexPath) as! DispenserTableViewCell
                 customCell.lblDispenser.text = "Dispensor Power Supply"
                 customCell.btnViewFailureModes.isHidden = true
+                customCell.imgDot.isHidden = true
                 cell = customCell
             }else if(indexPath.row == 1){
                 let  customCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTypeTableViewCell", for: indexPath) as! VehicleTypeTableViewCell
                 customCell.lblDescp.text = "Fueling Point 1"
+                customCell.imgDot.isHidden = true
                 cell = customCell
-                
             }
             
         default:
-            cell = tableView.dequeueReusableCell(withIdentifier: "SelectDispensorCategoryCell", for: indexPath)
             break
             
         }
@@ -86,33 +90,59 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-             headerView  = UINib(nibName: "SelectedAreaView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? SelectedAreaView
-             let indexSet: IndexSet = [indexPath.section]
-             isIntial = false
-             self.tableView.reloadSections(indexSet, with: .automatic)
-            break
-        case 1:
-            headerView = tableView.cellForRow(at: indexPath)
+            let SelectedView = tableView.dequeueReusableCell(withIdentifier: "SelectedAreaView", for: indexPath) as!  SelectedAreaView
+            SelectedView.lblSelectedArea.text = "Dispenser"
+            headerView = SelectedView
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
+            self.arrayHeader[indexPath.section] = (self.arrayHeader[indexPath.section] == 0) ? 1 : 0
+            self.tableView.reloadSections(indexSet, with: .automatic)
+            break
+        case 1:
+            let SelectedView = tableView.cellForRow(at: indexPath) as! SelectDispensorCategoryTableViewCell
+            SelectedView.imgDot.isHidden = false
+            SelectedView.btnEdit.isHidden = false
+            headerView = SelectedView
+            let indexSet: IndexSet = [indexPath.section]
+            isIntial = false
+            self.arrayHeader[indexPath.section] = (self.arrayHeader[indexPath.section] == 0) ? 1 : 0
             self.tableView.reloadSections(indexSet, with: .automatic)
             break
         case 2:
-            headerView = tableView.cellForRow(at: indexPath)
+            let SelectedView = tableView.cellForRow(at: indexPath)  as! DispenserTableViewCell
+            SelectedView.imgDot.isHidden = false
+            SelectedView.btnEdit.isHidden = false
+            headerView = SelectedView
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
+            self.arrayHeader[indexPath.section] = (self.arrayHeader[indexPath.section] == 0) ? 1 : 0
             self.tableView.reloadSections(indexSet, with: .automatic)
             break
         case 3:
-            headerView = tableView.cellForRow(at: indexPath)
+            let SelectedView = tableView.cellForRow(at: indexPath)  as! VehicleTypeTableViewCell
+            SelectedView.imgDot.isHidden = false
+            SelectedView.btnEdit.isHidden = false
+            headerView = SelectedView
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
+            self.arrayHeader[indexPath.section] = (self.arrayHeader[indexPath.section] == 0) ? 1 : 0
             self.tableView.reloadSections(indexSet, with: .automatic)
             break
         case 4:
-            headerView = tableView.cellForRow(at: indexPath)
+            if (indexPath.row == 0){
+                let SelectedView = tableView.cellForRow(at: indexPath) as! DispenserTableViewCell
+                SelectedView.imgDot.isHidden = false
+                SelectedView.btnEdit.isHidden = false
+                headerView = SelectedView
+            }else if(indexPath.row == 1){
+                let SelectedView = tableView.cellForRow(at: indexPath) as! VehicleTypeTableViewCell
+                SelectedView.imgDot.isHidden = false
+                SelectedView.btnEdit.isHidden = false
+                headerView = SelectedView
+            }
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
+            self.arrayHeader[indexPath.section] = (self.arrayHeader[indexPath.section] == 0) ? 1 : 0
             self.tableView.reloadSections(indexSet, with: .automatic)
             break
             
@@ -143,12 +173,14 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
             let button = UIButton(type: .custom)
             button.frame = viewHeader!.bounds
             button.tag = section // Assign section tag to this button
-            button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
+            //button.addTarget(self, action: #selector(tapSection(sender:)), for: .touchUpInside)
             viewHeader?.addSubview(button)
             return viewHeader
         }else {
             isIntial = true
-            return headerView
+            headerView?.contentView.layer.borderWidth = 0.5
+            headerView?.contentView.layer.borderColor = UIColor.lightGray.cgColor
+            return headerView?.contentView
         }
     }
     
@@ -178,6 +210,14 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         return (self.arrayHeader[section] == 0) ? 0 : rowCount
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha: 1)
+        return footerView
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return arrayHeader.count
     }
