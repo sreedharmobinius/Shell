@@ -46,12 +46,6 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     
     fileprivate func configureView() {
         btnSubmit.layer.cornerRadius = 10
-        //        textField1.layer.borderWidth = 0.5
-        //        textField1.layer.cornerRadius = 10
-        //        textField1.layer.borderColor = UIColor.gray.cgColor
-        //        textField2.layer.borderWidth = 0.5
-        //        textField2.layer.cornerRadius = 10
-        //        textField2.layer.borderColor = UIColor.gray.cgColor
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

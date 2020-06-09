@@ -33,16 +33,6 @@ class NewWorkOrderDetailViewController: UIViewController, UIImagePickerControlle
         }
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        //        self.navigationController?.isNavigationBarHidden = false
-        //        self.navigationController?.navigationBar.barTintColor = UIColor(red: 225/255, green: 24/255, blue: 20/255, alpha: 1.0)
-        //        let button = UIButton(type: UIButton.ButtonType.custom)
-        //        button.setImage(UIImage(named: "icon_fuel"), for: .normal)
-        //        button.addTarget(self, action:#selector(closeButtonClicked), for: .touchDown)
-        //        button.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
-        //        let barButton = UIBarButtonItem(customView: button)
-        //        self.navigationItem.leftBarButtonItems = [barButton]
-        //        let nav = UINib(nibName: "CustomNavView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
-        //        self.navigationItem.titleView = nav
         
         
         let layout = UICollectionViewFlowLayout()
@@ -141,17 +131,17 @@ class NewWorkOrderDetailViewController: UIViewController, UIImagePickerControlle
     }
     
     @IBAction func btnMinimiseClicked(_ sender: Any) {
-       let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeTabBarViewController
-        controller.modalPresentationStyle = .fullScreen
-        controller.prevVC = self
-        controller.isMinimised = true
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromBottom
-        view.window!.layer.add(transition, forKey: kCATransition)
-        self.present(controller, animated: true, completion: nil)
+//       let storyboard = UIStoryboard(name: "Home", bundle: nil)
+//        let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeTabBarViewController
+//        controller.modalPresentationStyle = .fullScreen
+//        controller.prevVC = self
+//        controller.isMinimised = true
+//        let transition = CATransition()
+//        transition.duration = 0.5
+//        transition.type = CATransitionType.push
+//        transition.subtype = CATransitionSubtype.fromBottom
+//        view.window!.layer.add(transition, forKey: kCATransition)
+//        self.present(controller, animated: true, completion: nil)
     }
     
 }

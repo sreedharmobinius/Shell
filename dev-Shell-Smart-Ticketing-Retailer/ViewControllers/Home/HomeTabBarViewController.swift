@@ -10,7 +10,7 @@ import UIKit
 
 class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
-    var prevVC: NewWorkOrderDetailViewController!
+    var prevVC: NewWorkOrderDetailsViewController!
     var isMinimised : Bool = false
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
             
             let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
             if(isMinimised){
-                if let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetail") as? NewWorkOrderDetailViewController {
+                if let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetails") as? NewWorkOrderDetailsViewController {
                     controller.modalPresentationStyle = .fullScreen
                     self.present(controller, animated: true, completion: nil)
                 }

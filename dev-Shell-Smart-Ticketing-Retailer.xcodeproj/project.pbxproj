@@ -18,6 +18,12 @@
 		AF68069324852E490078AD6D /* DispenserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF68069124852E490078AD6D /* DispenserTableViewCell.xib */; };
 		AF680695248531F40078AD6D /* TableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF680694248531F40078AD6D /* TableViewHeader.swift */; };
 		AF680697248531FD0078AD6D /* TableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF680696248531FD0078AD6D /* TableViewHeader.xib */; };
+		AF682D40248B781700324D83 /* WorkOrderDetailHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF682D3E248B781700324D83 /* WorkOrderDetailHeaderCell.swift */; };
+		AF682D41248B781700324D83 /* WorkOrderDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF682D3F248B781700324D83 /* WorkOrderDetailHeaderCell.xib */; };
+		AF682D44248B981E00324D83 /* PreliminaryCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF682D42248B981E00324D83 /* PreliminaryCheckTableViewCell.swift */; };
+		AF682D45248B981E00324D83 /* PreliminaryCheckTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF682D43248B981E00324D83 /* PreliminaryCheckTableViewCell.xib */; };
+		AF682D48248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF682D46248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift */; };
+		AF682D49248B9F5A00324D83 /* PhotoEvidenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF682D47248B9F5A00324D83 /* PhotoEvidenceTableViewCell.xib */; };
 		AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6880D32473F19900D50BAA /* HomeViewController.swift */; };
 		AF6880DA2473F53A00D50BAA /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */; };
 		AF6880DB2473F53A00D50BAA /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */; };
@@ -37,6 +43,13 @@
 		AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF727589246AB3BE002AD121 /* PassWordViewController.swift */; };
 		AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72758B246AB3E9002AD121 /* LogInViewController.swift */; };
 		AF72758E246AB41F002AD121 /* EmailIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF72758D246AB41F002AD121 /* EmailIdViewController.swift */; };
+		AF733A91248D21F600284239 /* NewWorkOrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF733A90248D21F600284239 /* NewWorkOrderDetailsViewController.swift */; };
+		AF733A94248D367700284239 /* SelectedEquipmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF733A92248D367700284239 /* SelectedEquipmentTableViewCell.swift */; };
+		AF733A95248D367700284239 /* SelectedEquipmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF733A93248D367700284239 /* SelectedEquipmentTableViewCell.xib */; };
+		AF733A97248D48B200284239 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF733A96248D48B200284239 /* DefaultTableViewCell.swift */; };
+		AF73F5A4248A318400E9D9D6 /* FailureModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73F5A2248A318400E9D9D6 /* FailureModeTableViewCell.swift */; };
+		AF73F5A5248A318400E9D9D6 /* FailureModeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF73F5A3248A318400E9D9D6 /* FailureModeTableViewCell.xib */; };
+		AF73F5A7248A34A800E9D9D6 /* FailureModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF73F5A6248A34A800E9D9D6 /* FailureModeViewController.swift */; };
 		AF744C2324694CBF00F535F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF744C2224694CBF00F535F4 /* Login.storyboard */; };
 		AF8C82B02465355F00BE3508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82AF2465355F00BE3508 /* AppDelegate.swift */; };
 		AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82B12465355F00BE3508 /* SceneDelegate.swift */; };
@@ -47,6 +60,8 @@
 		AF8C82BF2465356000BE3508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8C82BD2465356000BE3508 /* LaunchScreen.storyboard */; };
 		AF8C82CA2465356000BE3508 /* dev_Shell_Smart_Ticketing_RetailerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82C92465356000BE3508 /* dev_Shell_Smart_Ticketing_RetailerTests.swift */; };
 		AF959E872477C45B0082076C /* NewWorkOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF959E862477C45B0082076C /* NewWorkOrderViewController.swift */; };
+		AF9B5CF1248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B5CEF248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift */; };
+		AF9B5CF2248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */; };
 		AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F6246D195B0034109A /* OTPViewController.swift */; };
 		AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +88,12 @@
 		AF68069124852E490078AD6D /* DispenserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispenserTableViewCell.xib; sourceTree = "<group>"; };
 		AF680694248531F40078AD6D /* TableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeader.swift; sourceTree = "<group>"; };
 		AF680696248531FD0078AD6D /* TableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewHeader.xib; sourceTree = "<group>"; };
+		AF682D3E248B781700324D83 /* WorkOrderDetailHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderDetailHeaderCell.swift; sourceTree = "<group>"; };
+		AF682D3F248B781700324D83 /* WorkOrderDetailHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkOrderDetailHeaderCell.xib; sourceTree = "<group>"; };
+		AF682D42248B981E00324D83 /* PreliminaryCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreliminaryCheckTableViewCell.swift; sourceTree = "<group>"; };
+		AF682D43248B981E00324D83 /* PreliminaryCheckTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreliminaryCheckTableViewCell.xib; sourceTree = "<group>"; };
+		AF682D46248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEvidenceTableViewCell.swift; sourceTree = "<group>"; };
+		AF682D47248B9F5A00324D83 /* PhotoEvidenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoEvidenceTableViewCell.xib; sourceTree = "<group>"; };
 		AF6880D32473F19900D50BAA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
@@ -92,6 +113,13 @@
 		AF727589246AB3BE002AD121 /* PassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordViewController.swift; sourceTree = "<group>"; };
 		AF72758B246AB3E9002AD121 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		AF72758D246AB41F002AD121 /* EmailIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailIdViewController.swift; sourceTree = "<group>"; };
+		AF733A90248D21F600284239 /* NewWorkOrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkOrderDetailsViewController.swift; sourceTree = "<group>"; };
+		AF733A92248D367700284239 /* SelectedEquipmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedEquipmentTableViewCell.swift; sourceTree = "<group>"; };
+		AF733A93248D367700284239 /* SelectedEquipmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedEquipmentTableViewCell.xib; sourceTree = "<group>"; };
+		AF733A96248D48B200284239 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
+		AF73F5A2248A318400E9D9D6 /* FailureModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureModeTableViewCell.swift; sourceTree = "<group>"; };
+		AF73F5A3248A318400E9D9D6 /* FailureModeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FailureModeTableViewCell.xib; sourceTree = "<group>"; };
+		AF73F5A6248A34A800E9D9D6 /* FailureModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureModeViewController.swift; sourceTree = "<group>"; };
 		AF744C2224694CBF00F535F4 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		AF8C82AC2465355F00BE3508 /* dev-Shell-Smart-Ticketing-Retailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev-Shell-Smart-Ticketing-Retailer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C82AF2465355F00BE3508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +134,8 @@
 		AF8C82C92465356000BE3508 /* dev_Shell_Smart_Ticketing_RetailerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dev_Shell_Smart_Ticketing_RetailerTests.swift; sourceTree = "<group>"; };
 		AF8C82CB2465356000BE3508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF959E862477C45B0082076C /* NewWorkOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkOrderViewController.swift; sourceTree = "<group>"; };
+		AF9B5CEF248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEvidenceCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoEvidenceCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFB574F6246D195B0034109A /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFVerificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +158,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF682D3D248B639600324D83 /* New Work Order */ = {
+			isa = PBXGroup;
+			children = (
+				AF709838247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift */,
+				AF6E4F87247BD796004BD793 /* CustomNavView.xib */,
+				AF680684248514150078AD6D /* SelectEquipmentLayout.xib */,
+				AF68068824851B620078AD6D /* SelectEquipmentLayoutTableViewCell.swift */,
+				AF68068A248529B10078AD6D /* SelectDispensorCategoryCell.xib */,
+				AF68068C24852A310078AD6D /* SelectDispensorCategoryTableViewCell.swift */,
+				AF68069124852E490078AD6D /* DispenserTableViewCell.xib */,
+				AF68069024852E490078AD6D /* DispenserTableViewCell.swift */,
+				AF6AB0FC2487DA1100E9B712 /* VehicleTypeTableViewCell.swift */,
+				AF6AB0FD2487DA1100E9B712 /* VehicleTypeTableViewCell.xib */,
+				AF680694248531F40078AD6D /* TableViewHeader.swift */,
+				AF680696248531FD0078AD6D /* TableViewHeader.xib */,
+				AF682D3E248B781700324D83 /* WorkOrderDetailHeaderCell.swift */,
+				AF682D3F248B781700324D83 /* WorkOrderDetailHeaderCell.xib */,
+				AF682D42248B981E00324D83 /* PreliminaryCheckTableViewCell.swift */,
+				AF682D43248B981E00324D83 /* PreliminaryCheckTableViewCell.xib */,
+				AF682D46248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift */,
+				AF682D47248B9F5A00324D83 /* PhotoEvidenceTableViewCell.xib */,
+				AF6AB1002487E15200E9B712 /* SelectedAreaView.swift */,
+				AF6AB1022487E16400E9B712 /* SelectedAreaView.xib */,
+				AF73F5A2248A318400E9D9D6 /* FailureModeTableViewCell.swift */,
+				AF73F5A3248A318400E9D9D6 /* FailureModeTableViewCell.xib */,
+				AF733A92248D367700284239 /* SelectedEquipmentTableViewCell.swift */,
+				AF733A93248D367700284239 /* SelectedEquipmentTableViewCell.xib */,
+				AF733A96248D48B200284239 /* DefaultTableViewCell.swift */,
+				AF9B5CEF248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift */,
+				AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */,
+			);
+			path = "New Work Order";
+			sourceTree = "<group>";
+		};
 		AF6880D22473F18200D50BAA /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,21 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */,
-				AF709838247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift */,
 				AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */,
-				AF6E4F87247BD796004BD793 /* CustomNavView.xib */,
-				AF680684248514150078AD6D /* SelectEquipmentLayout.xib */,
-				AF68068824851B620078AD6D /* SelectEquipmentLayoutTableViewCell.swift */,
-				AF68068A248529B10078AD6D /* SelectDispensorCategoryCell.xib */,
-				AF68068C24852A310078AD6D /* SelectDispensorCategoryTableViewCell.swift */,
-				AF68069124852E490078AD6D /* DispenserTableViewCell.xib */,
-				AF68069024852E490078AD6D /* DispenserTableViewCell.swift */,
-				AF6AB0FC2487DA1100E9B712 /* VehicleTypeTableViewCell.swift */,
-				AF6AB0FD2487DA1100E9B712 /* VehicleTypeTableViewCell.xib */,
-				AF680694248531F40078AD6D /* TableViewHeader.swift */,
-				AF680696248531FD0078AD6D /* TableViewHeader.xib */,
-				AF6AB1002487E15200E9B712 /* SelectedAreaView.swift */,
-				AF6AB1022487E16400E9B712 /* SelectedAreaView.xib */,
+				AF682D3D248B639600324D83 /* New Work Order */,
 			);
 			path = CustomCell;
 			sourceTree = "<group>";
@@ -189,7 +240,9 @@
 			children = (
 				AF959E862477C45B0082076C /* NewWorkOrderViewController.swift */,
 				AF6E4F85247BD216004BD793 /* NewWorkOrderDetailViewController.swift */,
+				AF733A90248D21F600284239 /* NewWorkOrderDetailsViewController.swift */,
 				AF680686248517300078AD6D /* SelectEquipmentViewController.swift */,
+				AF73F5A6248A34A800E9D9D6 /* FailureModeViewController.swift */,
 			);
 			path = "New WorkOrder";
 			sourceTree = "<group>";
@@ -349,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF9B5CF2248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib in Resources */,
 				AF680697248531FD0078AD6D /* TableViewHeader.xib in Resources */,
 				AF2B8EC4247B9BD200A959F6 /* NewWorkOrder.storyboard in Resources */,
 				AF6E4F88247BD796004BD793 /* CustomNavView.xib in Resources */,
@@ -356,11 +410,16 @@
 				AF744C2324694CBF00F535F4 /* Login.storyboard in Resources */,
 				AF20975424726D6B0007E4DA /* Home.storyboard in Resources */,
 				AF68069324852E490078AD6D /* DispenserTableViewCell.xib in Resources */,
+				AF733A95248D367700284239 /* SelectedEquipmentTableViewCell.xib in Resources */,
 				AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */,
 				AF8C82BF2465356000BE3508 /* LaunchScreen.storyboard in Resources */,
+				AF682D45248B981E00324D83 /* PreliminaryCheckTableViewCell.xib in Resources */,
+				AF73F5A5248A318400E9D9D6 /* FailureModeTableViewCell.xib in Resources */,
 				AF6B549624766A9000A02DEB /* Montserrat-SemiBold.ttf in Resources */,
 				AF6B549724766A9000A02DEB /* Montserrat-Bold.ttf in Resources */,
+				AF682D49248B9F5A00324D83 /* PhotoEvidenceTableViewCell.xib in Resources */,
 				AF6B549A24766E7C00A02DEB /* Montserrat-Medium.ttf in Resources */,
+				AF682D41248B781700324D83 /* WorkOrderDetailHeaderCell.xib in Resources */,
 				AF6AB0FF2487DA1100E9B712 /* VehicleTypeTableViewCell.xib in Resources */,
 				AF8C82BC2465356000BE3508 /* Assets.xcassets in Resources */,
 				AF6AB1032487E16400E9B712 /* SelectedAreaView.xib in Resources */,
@@ -395,18 +454,27 @@
 				AF6AB0FE2487DA1100E9B712 /* VehicleTypeTableViewCell.swift in Sources */,
 				AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */,
 				AF959E872477C45B0082076C /* NewWorkOrderViewController.swift in Sources */,
+				AF733A97248D48B200284239 /* DefaultTableViewCell.swift in Sources */,
+				AF682D40248B781700324D83 /* WorkOrderDetailHeaderCell.swift in Sources */,
 				AF68068D24852A310078AD6D /* SelectDispensorCategoryTableViewCell.swift in Sources */,
+				AF682D44248B981E00324D83 /* PreliminaryCheckTableViewCell.swift in Sources */,
 				AF709839247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift in Sources */,
 				AF6F03092477FEA400916CDE /* HomeTabBarViewController.swift in Sources */,
 				AF680687248517300078AD6D /* SelectEquipmentViewController.swift in Sources */,
 				AF6880DA2473F53A00D50BAA /* HomeTableViewCell.swift in Sources */,
+				AF682D48248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift in Sources */,
+				AF9B5CF1248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift in Sources */,
 				AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */,
+				AF73F5A4248A318400E9D9D6 /* FailureModeTableViewCell.swift in Sources */,
+				AF73F5A7248A34A800E9D9D6 /* FailureModeViewController.swift in Sources */,
 				AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */,
 				AF6AB1012487E15200E9B712 /* SelectedAreaView.swift in Sources */,
 				AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */,
 				AF8C82BA2465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld in Sources */,
 				AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */,
 				AF68069224852E490078AD6D /* DispenserTableViewCell.swift in Sources */,
+				AF733A91248D21F600284239 /* NewWorkOrderDetailsViewController.swift in Sources */,
+				AF733A94248D367700284239 /* SelectedEquipmentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

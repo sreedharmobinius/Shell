@@ -23,7 +23,7 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         lineLayer.lineDashPattern = [4,4]
         let path = CGMutablePath()
         path.addLines(between: [CGPoint(x: 27, y: 100),
-                                CGPoint(x: 27, y: 300)])
+                                CGPoint(x: 27, y: 500)])
         lineLayer.path = path
         self.view.layer.addSublayer(lineLayer)
         
@@ -56,6 +56,8 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         case 2:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: "DispenserTableViewCell", for: indexPath) as! DispenserTableViewCell
             customCell.imgDot.isHidden = true
+            customCell.btnViewFailureModes.isHidden = true
+            customCell.btnViewFailureModes.addTarget(self, action: #selector(btnViewFailureModesClicked(sender:)), for: .touchUpInside)
             cell = customCell
             break
         case 3:
@@ -112,6 +114,7 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
             let SelectedView = tableView.cellForRow(at: indexPath)  as! DispenserTableViewCell
             SelectedView.imgDot.isHidden = false
             SelectedView.btnEdit.isHidden = false
+            SelectedView.btnViewFailureModes.isHidden = false
             headerView = SelectedView
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
@@ -222,7 +225,12 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         return arrayHeader.count
     }
     
-    
+    @objc func btnViewFailureModesClicked(sender: UIButton){
+        let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "FailureModeViewController")
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true, completion: nil)
+    }
     
     @objc func tapSection(sender: UIButton) {
         self.arrayHeader[sender.tag] = (self.arrayHeader[sender.tag] == 0) ? 1 : 0
