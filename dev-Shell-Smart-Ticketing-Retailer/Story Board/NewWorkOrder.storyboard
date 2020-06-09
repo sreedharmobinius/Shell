@@ -25,7 +25,7 @@
         <!--Select Equipment View Controller-->
         <scene sceneID="2aW-YJ-F5d">
             <objects>
-                <viewController storyboardIdentifier="newView" id="5gF-Ui-Kpq" customClass="SelectEquipmentViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DrillDownView" id="5gF-Ui-Kpq" customClass="SelectEquipmentViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bL8-AD-dav">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -709,7 +709,7 @@
                                         <rect key="frame" x="0.0" y="6" width="320" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipment Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-oK-JYw">
-                                                <rect key="frame" x="10" y="11" width="106" height="16"/>
+                                                <rect key="frame" x="10" y="11" width="127.5" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="Vev-3C-ty0"/>
                                                 </constraints>
@@ -754,7 +754,7 @@
                                         <rect key="frame" x="0.0" y="116" width="320" height="267"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potential Failure Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrH-oi-79Y">
-                                                <rect key="frame" x="10" y="11" width="130.5" height="16"/>
+                                                <rect key="frame" x="10" y="11" width="154.5" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="54Z-1b-jdj"/>
                                                 </constraints>
@@ -789,7 +789,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preliminary Checks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgC-Ce-09Q">
-                                                <rect key="frame" x="10" y="103.5" width="95" height="14"/>
+                                                <rect key="frame" x="10" y="103.5" width="112.5" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="14" id="6jD-xb-gtR"/>
                                                 </constraints>
@@ -824,7 +824,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complaint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vT-hW-UAY">
-                                                <rect key="frame" x="10" y="202.5" width="55.5" height="15"/>
+                                                <rect key="frame" x="10" y="202.5" width="65.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="15" id="qp2-cP-ry7"/>
                                                 </constraints>
@@ -876,7 +876,7 @@
                                         <rect key="frame" x="0.0" y="393" width="320" height="441"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Evidence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjh-PD-oFH">
-                                                <rect key="frame" x="10" y="11" width="91.5" height="16"/>
+                                                <rect key="frame" x="10" y="11" width="107.5" height="16"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="GhN-nz-74a"/>
                                                 </constraints>
@@ -1014,7 +1014,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shell Bellendur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xH8-iy-Mrn">
-                                        <rect key="frame" x="123" y="7" width="74" height="14"/>
+                                        <rect key="frame" x="117.5" y="7" width="85.5" height="14"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="14" id="oQl-id-ndX"/>
                                         </constraints>
@@ -1023,7 +1023,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New work order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07J-7z-xMJ">
-                                        <rect key="frame" x="114" y="25" width="92.5" height="16"/>
+                                        <rect key="frame" x="105" y="25" width="110" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="P3K-EE-qau"/>
                                         </constraints>
@@ -1032,7 +1032,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_fuel" translatesAutoresizingMaskIntoConstraints="NO" id="kpM-OH-gKc">
-                                        <rect key="frame" x="106.5" y="8.5" width="10" height="11"/>
+                                        <rect key="frame" x="101" y="8.5" width="10" height="11"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="11" id="5xz-eV-sRu"/>
                                             <constraint firstAttribute="width" constant="10" id="EPM-g0-QB7"/>

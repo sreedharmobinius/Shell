@@ -12,6 +12,8 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     var prevVC: NewWorkOrderDetailsViewController!
     var isMinimised : Bool = false
+    let newWorkOrderDetailsIdentifier = "NewWorkOrderDetails"
+    let newWorkOrderIdentifier = "NewWorkOrder"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,16 +28,16 @@ class HomeTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if(viewController is NewWorkOrderViewController){
             
-            let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
+            let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.NewWorkOrderStoryBoard, bundle: nil)
             if(isMinimised){
-                if let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetails") as? NewWorkOrderDetailsViewController {
+                if let controller = storyboard.instantiateViewController(withIdentifier: newWorkOrderDetailsIdentifier) as? NewWorkOrderDetailsViewController {
                     controller.modalPresentationStyle = .fullScreen
                     self.present(controller, animated: true, completion: nil)
                 }
                 self.isMinimised = false
                 return false
             }else {
-                if let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrder") as? NewWorkOrderViewController {
+                if let controller = storyboard.instantiateViewController(withIdentifier: newWorkOrderIdentifier) as? NewWorkOrderViewController {
                     controller.modalPresentationStyle = .fullScreen
                     let nav = UINavigationController(rootViewController: controller)
                     self.present(nav, animated: true, completion: nil)

@@ -33,11 +33,11 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = UITableView.automaticDimension
-        tableView.register(UINib(nibName: "SelectEquipmentLayout", bundle: nil), forCellReuseIdentifier: "SelectEquipmentLayout")
-        tableView.register(UINib(nibName: "DispenserTableViewCell", bundle: nil), forCellReuseIdentifier: "DispenserTableViewCell")
-        tableView.register(UINib(nibName: "SelectDispensorCategoryCell", bundle: nil), forCellReuseIdentifier: "SelectDispensorCategoryCell")
-        tableView.register(UINib(nibName: "VehicleTypeTableViewCell", bundle: nil), forCellReuseIdentifier: "VehicleTypeTableViewCell")
-        tableView.register(UINib(nibName: "SelectedAreaView", bundle: nil), forCellReuseIdentifier: "SelectedAreaView")
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectEquipmentLayout, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectEquipmentLayout)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.DispenserTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.DispenserTableViewCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectDispensorCategoryCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectDispensorCategoryCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.VehicleTypeTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.VehicleTypeTableViewCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectedAreaView, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectedAreaView)
         
     }
     
@@ -45,37 +45,37 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         var cell : UITableViewCell!
         switch indexPath.section {
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: "SelectEquipmentLayout", for: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectEquipmentLayout, for: indexPath)
             break
         case 1:
-            let  customCell = tableView.dequeueReusableCell(withIdentifier: "SelectDispensorCategoryCell", for: indexPath) as! SelectDispensorCategoryTableViewCell
-            customCell.lblCategory.text = "Electrical"
+            let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectDispensorCategoryCell, for: indexPath) as! SelectDispensorCategoryTableViewCell
+            customCell.lblCategory.text = NSLocalizedString("ELECTRICAL", comment: "ELECTRICAL")
             customCell.imgDot.isHidden = true
             cell = customCell
             break
         case 2:
-            let  customCell = tableView.dequeueReusableCell(withIdentifier: "DispenserTableViewCell", for: indexPath) as! DispenserTableViewCell
+            let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.DispenserTableViewCell, for: indexPath) as! DispenserTableViewCell
             customCell.imgDot.isHidden = true
             customCell.btnViewFailureModes.isHidden = true
             customCell.btnViewFailureModes.addTarget(self, action: #selector(btnViewFailureModesClicked(sender:)), for: .touchUpInside)
             cell = customCell
             break
         case 3:
-            let  customCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTypeTableViewCell", for: indexPath) as! VehicleTypeTableViewCell
-            customCell.lblDescp.text = "Four Wheeler"
+            let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.VehicleTypeTableViewCell, for: indexPath) as! VehicleTypeTableViewCell
+            customCell.lblDescp.text = NSLocalizedString("FOUR_WHEELER", comment: "FOUR_WHEELER")
             customCell.imgDot.isHidden = true
             cell = customCell
             break
         case 4:
             if(indexPath.row == 0){
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DispenserTableViewCell", for: indexPath) as! DispenserTableViewCell
-                customCell.lblDispenser.text = "Dispensor Power Supply"
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.DispenserTableViewCell, for: indexPath) as! DispenserTableViewCell
+                customCell.lblDispenser.text = NSLocalizedString("DISPENSORY_POWER_SUPPLY", comment: "DISPENSORY_POWER_SUPPLY")
                 customCell.btnViewFailureModes.isHidden = true
                 customCell.imgDot.isHidden = true
                 cell = customCell
             }else if(indexPath.row == 1){
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTypeTableViewCell", for: indexPath) as! VehicleTypeTableViewCell
-                customCell.lblDescp.text = "Fueling Point 1"
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.VehicleTypeTableViewCell, for: indexPath) as! VehicleTypeTableViewCell
+                customCell.lblDescp.text = NSLocalizedString("FUELING_POINT1", comment: "FUELING_POINT1")
                 customCell.imgDot.isHidden = true
                 cell = customCell
             }
@@ -92,8 +92,8 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.section {
         case 0:
-            let SelectedView = tableView.dequeueReusableCell(withIdentifier: "SelectedAreaView", for: indexPath) as!  SelectedAreaView
-            SelectedView.lblSelectedArea.text = "Dispenser"
+            let SelectedView = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectedAreaView, for: indexPath) as!  SelectedAreaView
+            SelectedView.lblSelectedArea.text = NSLocalizedString("DISPENSER", comment: "DISPENSER")
             headerView = SelectedView
             let indexSet: IndexSet = [indexPath.section]
             isIntial = false
@@ -159,18 +159,18 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let viewHeader  = UINib(nibName: "TableViewHeader", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? TableViewHeader
+        let viewHeader  = UINib(nibName: StoryBoardConstants.nibs.TableViewHeader, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? TableViewHeader
         if (isIntial){
             viewHeader?.backgroundColor = UIColor(red: 247/255, green: 247/255, blue: 247/255, alpha: 1)
             switch section {
             case 0:
-                viewHeader?.lblSelect.text = "Select Area"
+                viewHeader?.lblSelect.text = NSLocalizedString("SELECT_AREA", comment: "SELECT_AREA")
                 break
             case 1:
-                viewHeader?.lblSelect.text = "Select Category"
+                viewHeader?.lblSelect.text = NSLocalizedString("SELECT_CATEGORY", comment: "SELECT_CATEGORY")
                 break
             default:
-                viewHeader?.lblSelect.text = "Select"
+                viewHeader?.lblSelect.text = NSLocalizedString("SELECT", comment: "SELECT")
                 
             }
             let button = UIButton(type: .custom)
@@ -226,8 +226,8 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
     }
     
     @objc func btnViewFailureModesClicked(sender: UIButton){
-        let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "FailureModeViewController")
+        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.NewWorkOrderStoryBoard, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.FailureModeViewController)
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }

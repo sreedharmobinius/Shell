@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  dev-Shell-Smart-Ticketing-Retailer
+
+  Created by Manoj on 09/06/20.
+  Copyright © 2020 Mobinius. All rights reserved.
+*/
+"STATION_DETAILS" = "View Station Details";
+"CANCEL" = "CANCEL";
+"CROSS_MARK" = "Cross Mark";
+"MDU_ERROR_MESSAGE" = "MDU -1 Cross mark or What error in the Display in MDU and BPOS";
+"COMPLAINTS" = "Complaints";
+"PRELIMINARY_CHECK" = "Preliminary Check";
+"POTENTIAL_FAILURE_MODE" = "Potential Failure Mode";
+"EQUIPMENT_DETAILS" = "Equipment Details";
+"PHOTO_EVIDENCE" = "Photo Evidence";
+"ELECTRICAL" = "Electrical";
+"FOUR_WHEELER" = "Four Wheeler";
+"DISPENSORY_POWER_SUPPLY"= "Dispensor Power Supply";
+"FUELING_POINT1"="Fueling Point 1";
+"DISPENSER" = "Dispenser";
+"SELECT_AREA" = "Select Area";
+"SELECT_CATEGORY"= "Select Category";
+"SELECT" = "Select";
+"PLACE_HOLDER_DASH" = "- - - - - - - -";

@@ -13,7 +13,8 @@ class NewWorkOrderViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var containerView: UIView!
-    
+    let cellReuseIdentifier = "NewWorkOrderCell"
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -30,12 +31,12 @@ class NewWorkOrderViewController: UIViewController, UITableViewDelegate, UITable
        }
        
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "NewWorkOrderCell")!
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
           
            return cell
        }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
+        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.NewWorkOrderStoryBoard, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetails") as! NewWorkOrderDetailsViewController
         controller.modalPresentationStyle = .fullScreen
         controller.prevVC = self

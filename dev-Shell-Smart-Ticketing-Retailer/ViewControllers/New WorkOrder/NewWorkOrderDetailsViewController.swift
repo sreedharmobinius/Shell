@@ -18,7 +18,7 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
     
     var imageArray: [UIImage] = []
     var prevVC: NewWorkOrderViewController!
-    
+    let defaultCellIdentifier = "DefaultCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +34,10 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.estimatedSectionHeaderHeight = UITableView.automaticDimension
-        tableView.register(UINib(nibName: "SelectedEquipmentTableViewCell", bundle: nil), forCellReuseIdentifier: "SelectedEquipmentTableViewCell")
-        tableView.register(UINib(nibName: "DispenserTableViewCell", bundle: nil), forCellReuseIdentifier: "DispenserTableViewCell")
-        tableView.register(UINib(nibName: "PreliminaryCheckTableViewCell", bundle: nil), forCellReuseIdentifier: "PreliminaryCheckTableViewCell")
-        tableView.register(UINib(nibName: "PhotoEvidenceTableViewCell", bundle: nil), forCellReuseIdentifier: "PhotoEvidenceTableViewCell")
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectedEquipmentTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectedEquipmentTableViewCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.DispenserTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.DispenserTableViewCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.PreliminaryCheckTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.PreliminaryCheckTableViewCell)
+        tableView.register(UINib(nibName: StoryBoardConstants.nibs.PhotoEvidenceTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.PhotoEvidenceTableViewCell)
         
         
     }
@@ -73,7 +73,7 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
             
             switch indexPath.section {
             case 0:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath) as! DefaultTableViewCell
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath) as! DefaultTableViewCell
                 customCell.btnChooseEquipment.isHidden = false
                 customCell.btnChooseEquipment.layer.borderWidth = 0.5
                 customCell.btnChooseEquipment.layer.cornerRadius = 8
@@ -82,23 +82,23 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
                 cell = customCell
                 break
             case 1:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath)
                 customCell.textLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-                customCell.textLabel?.text = "- - - - - - - -"
+                customCell.textLabel?.text = NSLocalizedString("PLACE_HOLDER_DASH", comment: "PLACE_HOLDER_DASH")
                 cell = customCell
                 break
             case 2:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
-                customCell.textLabel?.text = "- - - - - - - -"
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath)
+                customCell.textLabel?.text = NSLocalizedString("PLACE_HOLDER_DASH", comment: "PLACE_HOLDER_DASH")
                 cell = customCell
                 break
             case 3:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
-                customCell.textLabel?.text = "- - - - - - - -"
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath)
+                customCell.textLabel?.text = NSLocalizedString("PLACE_HOLDER_DASH", comment: "PLACE_HOLDER_DASH")
                 cell = customCell
                 break
             case 4:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "PhotoEvidenceTableViewCell", for: indexPath) as! PhotoEvidenceTableViewCell
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.PhotoEvidenceTableViewCell, for: indexPath) as! PhotoEvidenceTableViewCell
                 cell = customCell
                 break
             default:
@@ -109,28 +109,28 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
         }else {
             switch indexPath.section {
             case 0:
-                cell = tableView.dequeueReusableCell(withIdentifier: "SelectedEquipmentTableViewCell", for: indexPath)as! SelectedEquipmentTableViewCell
+                cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectedEquipmentTableViewCell, for: indexPath)as! SelectedEquipmentTableViewCell
                 break
             case 1:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath)
                 customCell.textLabel?.font = UIFont(name: "Montserrat-Regular", size: 17)
-                customCell.textLabel?.text = "Cross Mark"
+                customCell.textLabel?.text = NSLocalizedString("CROSS_MARK", comment: "CROSS_MARK")
                 cell = customCell
                 break
             case 2:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "PreliminaryCheckTableViewCell", for: indexPath) as! PreliminaryCheckTableViewCell
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.PreliminaryCheckTableViewCell, for: indexPath) as! PreliminaryCheckTableViewCell
                 cell = customCell
                 break
             case 3:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "DefaultCell", for: indexPath)
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: defaultCellIdentifier, for: indexPath)
                 customCell.textLabel?.lineBreakMode = .byWordWrapping
                 customCell.textLabel?.numberOfLines = 0
                 customCell.textLabel?.backgroundColor = UIColor(red: 255/255, green: 235/255, blue: 194/255, alpha: 1)
-                customCell.textLabel?.text = "MDU -1 Cross mark or What error in the Display in MDU and BPOS"
+                customCell.textLabel?.text = NSLocalizedString("MDU_ERROR_MESSAGE", comment: "MDU_ERROR_MESSAGE")
                 cell = customCell
                 break
             case 4:
-                let  customCell = tableView.dequeueReusableCell(withIdentifier: "PhotoEvidenceTableViewCell", for: indexPath) as! PhotoEvidenceTableViewCell
+                let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.PhotoEvidenceTableViewCell, for: indexPath) as! PhotoEvidenceTableViewCell
                 cell = customCell
                 break
             default:
@@ -146,30 +146,30 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let viewHeader  = UINib(nibName: "WorkOrderDetailHeaderCell", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? WorkOrderDetailHeaderCell
+        let viewHeader  = UINib(nibName: StoryBoardConstants.nibs.WorkOrderDetailHeaderCell, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? WorkOrderDetailHeaderCell
         if (prevVC == nil ){
             viewHeader?.btnChange.isHidden = false
         }
         switch section {
         case 0:
-            viewHeader?.lblHeader.text = "Equipment Details"
+            viewHeader?.lblHeader.text = NSLocalizedString("EQUIPMENT_DETAILS", comment: "EQUIPMENT_DETAILS")
             break
         case 1:
-            viewHeader?.lblHeader.text = "Potential Failure Mode"
+            viewHeader?.lblHeader.text = NSLocalizedString("POTENTIAL_FAILURE_MODE", comment: "POTENTIAL_FAILURE_MODE")
             break
         case 2:
-            viewHeader?.lblHeader.text = "Preliminary Checks"
+            viewHeader?.lblHeader.text = NSLocalizedString("PRELIMINARY_CHECK", comment: "PRELIMINARY_CHECK")
             viewHeader?.dottedView.isHidden = false
             viewHeader?.redView.isHidden = false
             viewHeader?.dashView.isHidden = true
             break
         case 3:
-            viewHeader?.lblHeader.text = "Complaint"
+            viewHeader?.lblHeader.text = NSLocalizedString("COMPLAINTS", comment: "COMPLAINTS")
             viewHeader?.dottedView.isHidden = false
             viewHeader?.dashView.isHidden = true
             break
         case 4:
-            viewHeader?.lblHeader.text = "Photo Evidence"
+            viewHeader?.lblHeader.text = NSLocalizedString("PHOTO_EVIDENCE", comment: "PHOTO_EVIDENCE" )
             break
         default:
             break
@@ -184,8 +184,8 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
     }
     
     @objc func btnChooseEquipmentClicked(sender: UIButton){
-        let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "newView")
+        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.NewWorkOrderStoryBoard, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.DrillDownView)
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }
@@ -201,8 +201,8 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
     }
     
     @IBAction func MinimiseButtonClicked(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Home", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "Home") as! HomeTabBarViewController
+        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.HomeStoryBoard, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.Home) as! HomeTabBarViewController
         controller.modalPresentationStyle = .fullScreen
         controller.prevVC = self
         controller.isMinimised = true

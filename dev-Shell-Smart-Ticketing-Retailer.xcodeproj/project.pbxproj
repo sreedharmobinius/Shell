@@ -38,6 +38,8 @@
 		AF6E4F86247BD216004BD793 /* NewWorkOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E4F85247BD216004BD793 /* NewWorkOrderDetailViewController.swift */; };
 		AF6E4F88247BD796004BD793 /* CustomNavView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6E4F87247BD796004BD793 /* CustomNavView.xib */; };
 		AF6F03092477FEA400916CDE /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F03082477FEA400916CDE /* HomeTabBarViewController.swift */; };
+		AF706B55248F919C00D97B5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF706B54248F919C00D97B5E /* Localizable.strings */; };
+		AF706B58248FA00600D97B5E /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF706B57248FA00600D97B5E /* UIConstants.swift */; };
 		AF709839247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF709838247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift */; };
 		AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF727587246AB385002AD121 /* PhoneNumberViewController.swift */; };
 		AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF727589246AB3BE002AD121 /* PassWordViewController.swift */; };
@@ -108,6 +110,8 @@
 		AF6E4F85247BD216004BD793 /* NewWorkOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkOrderDetailViewController.swift; sourceTree = "<group>"; };
 		AF6E4F87247BD796004BD793 /* CustomNavView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavView.xib; sourceTree = "<group>"; };
 		AF6F03082477FEA400916CDE /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		AF706B54248F919C00D97B5E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		AF706B57248FA00600D97B5E /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		AF709838247D16B00046549A /* NewWorkOrderDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkOrderDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF727587246AB385002AD121 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
 		AF727589246AB3BE002AD121 /* PassWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 		AF6880D52473F4B100D50BAA /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				AF706B56248F9F7D00D97B5E /* Constants */,
 				AF6880D82473F53A00D50BAA /* HomeTableViewCell.swift */,
 				AF6880D92473F53A00D50BAA /* HomeTableViewCell.xib */,
 				AF682D3D248B639600324D83 /* New Work Order */,
@@ -245,6 +250,14 @@
 				AF73F5A6248A34A800E9D9D6 /* FailureModeViewController.swift */,
 			);
 			path = "New WorkOrder";
+			sourceTree = "<group>";
+		};
+		AF706B56248F9F7D00D97B5E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				AF706B57248FA00600D97B5E /* UIConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		AF727583246AB279002AD121 /* ViewControllers */ = {
@@ -307,6 +320,7 @@
 				AF6880D52473F4B100D50BAA /* CustomCell */,
 				AF8C82BB2465356000BE3508 /* Assets.xcassets */,
 				AF8C82C02465356000BE3508 /* Info.plist */,
+				AF706B54248F919C00D97B5E /* Localizable.strings */,
 				AF8C82B82465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld */,
 			);
 			path = "dev-Shell-Smart-Ticketing-Retailer";
@@ -412,6 +426,7 @@
 				AF68069324852E490078AD6D /* DispenserTableViewCell.xib in Resources */,
 				AF733A95248D367700284239 /* SelectedEquipmentTableViewCell.xib in Resources */,
 				AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */,
+				AF706B55248F919C00D97B5E /* Localizable.strings in Resources */,
 				AF8C82BF2465356000BE3508 /* LaunchScreen.storyboard in Resources */,
 				AF682D45248B981E00324D83 /* PreliminaryCheckTableViewCell.xib in Resources */,
 				AF73F5A5248A318400E9D9D6 /* FailureModeTableViewCell.xib in Resources */,
@@ -451,6 +466,7 @@
 				AF6E4F86247BD216004BD793 /* NewWorkOrderDetailViewController.swift in Sources */,
 				AF680695248531F40078AD6D /* TableViewHeader.swift in Sources */,
 				AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */,
+				AF706B58248FA00600D97B5E /* UIConstants.swift in Sources */,
 				AF6AB0FE2487DA1100E9B712 /* VehicleTypeTableViewCell.swift in Sources */,
 				AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */,
 				AF959E872477C45B0082076C /* NewWorkOrderViewController.swift in Sources */,

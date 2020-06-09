@@ -34,7 +34,7 @@ class FailureModeViewController: UIViewController, UITableViewDataSource, UITabl
      }
      
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let  cell = tableView.dequeueReusableCell(withIdentifier: "FailureTypeCell", for: indexPath)
+        let  cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.FailureTypeCell, for: indexPath)
         cell.imageView?.image = UIImage(named: "icon_Logo_Small")
         cell.textLabel?.text = failures[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Montserrat-Bold", size: 11)
@@ -45,8 +45,8 @@ class FailureModeViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     @IBAction func SubmitButtonClicked(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "NewWorkOrder", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "NewWorkOrderDetails") as! NewWorkOrderDetailsViewController
+        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.NewWorkOrderStoryBoard, bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.NewWorkOrderDetails) as! NewWorkOrderDetailsViewController
         controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true, completion: nil)
     }
