@@ -45,7 +45,8 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         var cell : UITableViewCell!
         switch indexPath.section {
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: "SelectEquipmentLayout", for: indexPath)
+          let cell = tableView.dequeueReusableCell(withIdentifier: "SelectEquipmentLayout", for: indexPath) as! SelectEquipmentLayoutTableViewCell
+            cell.showOrHideDispenserButton(count:6)
             break
         case 1:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: "SelectDispensorCategoryCell", for: indexPath) as! SelectDispensorCategoryTableViewCell
