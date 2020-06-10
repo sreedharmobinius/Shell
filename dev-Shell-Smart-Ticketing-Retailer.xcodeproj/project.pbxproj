@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BB114CF2557EB035E008398 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */; };
 		AF20975424726D6B0007E4DA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF20975324726D6B0007E4DA /* Home.storyboard */; };
 		AF2B8EC4247B9BD200A959F6 /* NewWorkOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */; };
 		AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF680684248514150078AD6D /* SelectEquipmentLayout.xib */; };
@@ -66,6 +67,7 @@
 		AF9B5CF2248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */; };
 		AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F6246D195B0034109A /* OTPViewController.swift */; };
 		AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */; };
+		DB96D179F36098E0687D178F /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A9900AB562CF7E6ADE6BA8 /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; sourceTree = "<group>"; };
+		60A9900AB562CF7E6ADE6BA8 /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_Shell_Smart_Ticketing_Retailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-RetailerTests/Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF20975324726D6B0007E4DA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewWorkOrder.storyboard; sourceTree = "<group>"; };
 		AF680684248514150078AD6D /* SelectEquipmentLayout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectEquipmentLayout.xib; sourceTree = "<group>"; };
@@ -142,6 +147,9 @@
 		AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoEvidenceCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFB574F6246D195B0034109A /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFVerificationViewController.swift; sourceTree = "<group>"; };
+		D1C6BB639FD2C3C064B7E975 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-RetailerTests/Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EDEC580829F2B3B7A309BB19 /* Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig"; sourceTree = "<group>"; };
+		F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB96D179F36098E0687D178F /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,12 +165,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB114CF2557EB035E008398 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DAEB361BA560F7970B8FC03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A9900AB562CF7E6ADE6BA8 /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework */,
+				F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF682D3D248B639600324D83 /* New Work Order */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +314,8 @@
 				AF8C82AE2465355F00BE3508 /* dev-Shell-Smart-Ticketing-Retailer */,
 				AF8C82C82465356000BE3508 /* dev-Shell-Smart-Ticketing-RetailerTests */,
 				AF8C82AD2465355F00BE3508 /* Products */,
+				FD9506A295433DBFF75606B3 /* Pods */,
+				6DAEB361BA560F7970B8FC03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,6 +356,18 @@
 			path = "dev-Shell-Smart-Ticketing-RetailerTests";
 			sourceTree = "<group>";
 		};
+		FD9506A295433DBFF75606B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */,
+				EDEC580829F2B3B7A309BB19 /* Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig */,
+				D1C6BB639FD2C3C064B7E975 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig */,
+				82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF8C82CE2465356000BE3508 /* Build configuration list for PBXNativeTarget "dev-Shell-Smart-Ticketing-Retailer" */;
 			buildPhases = (
+				1F014483EA8E62F5FAA165A4 /* [CP] Check Pods Manifest.lock */,
 				AF8C82A82465355F00BE3508 /* Sources */,
 				AF8C82A92465355F00BE3508 /* Frameworks */,
 				AF8C82AA2465355F00BE3508 /* Resources */,
+				0EBF314DF2183C5F9AE0E357 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +394,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF8C82D12465356000BE3508 /* Build configuration list for PBXNativeTarget "dev-Shell-Smart-Ticketing-RetailerTests" */;
 			buildPhases = (
+				8882FD625B01B17F2BDD54CF /* [CP] Check Pods Manifest.lock */,
 				AF8C82C12465356000BE3508 /* Sources */,
 				AF8C82C22465356000BE3508 /* Frameworks */,
 				AF8C82C32465356000BE3508 /* Resources */,
@@ -452,6 +488,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EBF314DF2183C5F9AE0E357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F014483EA8E62F5FAA165A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dev-Shell-Smart-Ticketing-Retailer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8882FD625B01B17F2BDD54CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dev-Shell-Smart-Ticketing-RetailerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF8C82A82465355F00BE3508 /* Sources */ = {
@@ -648,6 +748,7 @@
 		};
 		AF8C82CF2465356000BE3508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,6 +768,7 @@
 		};
 		AF8C82D02465356000BE3508 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDEC580829F2B3B7A309BB19 /* Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -686,6 +788,7 @@
 		};
 		AF8C82D22465356000BE3508 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1C6BB639FD2C3C064B7E975 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,6 +810,7 @@
 		};
 		AF8C82D32465356000BE3508 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
