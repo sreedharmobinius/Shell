@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NEp-zo-WMa">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,27 +10,17 @@
         <array key="Montserrat-Bold.ttf">
             <string>Montserrat-Bold</string>
         </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="aZy-gh-0Eo">
-            <objects>
-                <viewController id="hSH-V9-5qo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JUT-9M-feZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7R1-PG-ekt"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="icon_managers" id="hrk-cY-Ghi"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TBY-h7-7iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-911" y="578"/>
-        </scene>
         <!--Home View Controller-->
         <scene sceneID="KnA-S6-n4X">
             <objects>
@@ -293,13 +282,13 @@
         <!--Home Tab Bar View Controller-->
         <scene sceneID="HY0-WK-01T">
             <objects>
-                <tabBarController storyboardIdentifier="Home" id="NEp-zo-WMa" customClass="HomeTabBarViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="NEp-zo-WMa" customClass="HomeTabBarViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="la7-ev-PMq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.84531646569999996" green="0.19660841509999999" blue="0.16494027859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -308,7 +297,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="6Pl-h0-KkL" kind="relationship" relationship="viewControllers" id="dov-Rd-0vn"/>
-                        <segue destination="hSH-V9-5qo" kind="relationship" relationship="viewControllers" id="UEH-z5-59t"/>
+                        <segue destination="IYt-MH-UuE" kind="relationship" relationship="viewControllers" id="JqC-yy-kzc"/>
                         <segue destination="seo-lk-bAL" kind="relationship" relationship="viewControllers" id="dDx-BL-9Sy"/>
                         <segue destination="8JC-Io-dvu" kind="relationship" relationship="viewControllers" id="tea-eU-vJa"/>
                         <segue destination="MNq-y6-83b" kind="relationship" relationship="viewControllers" id="aHh-Hi-4SW"/>
@@ -316,7 +305,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sU3-B8-4CM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-180" y="-386"/>
+            <point key="canvasLocation" x="-724" y="-376"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9No-Nj-6JZ">
@@ -369,8 +358,172 @@
             </objects>
             <point key="canvasLocation" x="-249" y="568"/>
         </scene>
+        <!--Managers Table View Controller-->
+        <scene sceneID="jJ7-FL-pfz">
+            <objects>
+                <tableViewController storyboardIdentifier="Managers" id="IYt-MH-UuE" customClass="ManagersTableViewController" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VCs-bc-btl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="z6C-Pv-RiM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MANAGERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSA-QE-QNf">
+                                    <rect key="frame" x="108" y="16" width="104" height="21"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="17"/>
+                                    <color key="textColor" red="0.87058823529999996" green="0.1137254902" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="YSA-QE-QNf" firstAttribute="centerY" secondItem="z6C-Pv-RiM" secondAttribute="centerY" id="0HN-Y6-zeh"/>
+                                <constraint firstItem="YSA-QE-QNf" firstAttribute="centerX" secondItem="z6C-Pv-RiM" secondAttribute="centerX" id="RTt-h6-rQa"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="managersCellIdentifier" rowHeight="100" id="mf5-cC-eMG" customClass="ManagersTableViewCell" customModule="dev_Shell_Smart_Ticketing_Retailer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="81" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mf5-cC-eMG" id="NRn-dq-IvD">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shell Bellandur" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJP-dd-8md">
+                                            <rect key="frame" x="41" y="17" width="102" height="16"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                            <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bellandur" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvW-Rv-bzp">
+                                            <rect key="frame" x="41" y="34" width="44.5" height="11"/>
+                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="9"/>
+                                            <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_station" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-ww-yEe">
+                                            <rect key="frame" x="17" y="17" width="14" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="16" id="S22-TI-FRf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5YE-4F-rBo" userLabel="StraightLineView">
+                                            <rect key="frame" x="16" y="47" width="288" height="1"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="VZd-s2-Q8b">
+                                            <rect key="frame" x="28" y="56" width="264" height="50"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4Q-z0-7rm" userLabel="ClusterManagerView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="114" height="50"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeV-YZ-VZ6">
+                                                            <rect key="frame" x="25" y="5" width="21" height="16"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                                            <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick-man" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-BX-5yr">
+                                                            <rect key="frame" x="5.5" y="8" width="14.5" height="14.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cluster Managers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGU-f2-BNI">
+                                                            <rect key="frame" x="25" y="20" width="84" height="10"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="9"/>
+                                                            <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="NeV-YZ-VZ6" firstAttribute="leading" secondItem="FRc-BX-5yr" secondAttribute="trailing" constant="5" id="GkF-EG-v8h"/>
+                                                        <constraint firstItem="FRc-BX-5yr" firstAttribute="top" secondItem="I4Q-z0-7rm" secondAttribute="topMargin" id="Kz2-hJ-DEs"/>
+                                                        <constraint firstItem="OGU-f2-BNI" firstAttribute="centerY" secondItem="I4Q-z0-7rm" secondAttribute="centerY" id="QDy-a4-Gkz"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NeV-YZ-VZ6" secondAttribute="trailing" constant="68" id="Uaq-Oc-9ja"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OGU-f2-BNI" secondAttribute="trailing" constant="5" id="Urz-dx-0Xw"/>
+                                                        <constraint firstItem="NeV-YZ-VZ6" firstAttribute="top" secondItem="I4Q-z0-7rm" secondAttribute="top" constant="5" id="fUR-sh-Hr4"/>
+                                                        <constraint firstItem="OGU-f2-BNI" firstAttribute="leading" secondItem="I4Q-z0-7rm" secondAttribute="leading" constant="25" id="hHG-rD-FSE"/>
+                                                        <constraint firstItem="OGU-f2-BNI" firstAttribute="top" secondItem="I4Q-z0-7rm" secondAttribute="top" constant="20" id="hid-9h-Vd5"/>
+                                                        <constraint firstItem="NeV-YZ-VZ6" firstAttribute="leading" secondItem="OGU-f2-BNI" secondAttribute="leading" id="zeB-EN-EKv"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-Rr-UJj" userLabel="StationManagerView">
+                                                    <rect key="frame" x="149" y="0.0" width="115" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 481" translatesAutoresizingMaskIntoConstraints="NO" id="afr-md-lsP">
+                                                            <rect key="frame" x="8" y="8" width="14.5" height="14.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station Managers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-Km-MeU">
+                                                            <rect key="frame" x="30.5" y="20" width="81" height="11"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="9"/>
+                                                            <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0g-xx-bsy">
+                                                            <rect key="frame" x="30.5" y="5" width="18" height="16"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="13"/>
+                                                            <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2zN-Km-MeU" firstAttribute="top" secondItem="rfu-Rr-UJj" secondAttribute="top" constant="20" id="1kz-Es-yf4"/>
+                                                        <constraint firstItem="H0g-xx-bsy" firstAttribute="leading" secondItem="2zN-Km-MeU" secondAttribute="leading" id="J79-ND-0QB"/>
+                                                        <constraint firstItem="afr-md-lsP" firstAttribute="top" secondItem="rfu-Rr-UJj" secondAttribute="topMargin" id="O3u-W0-97c"/>
+                                                        <constraint firstItem="H0g-xx-bsy" firstAttribute="leading" secondItem="afr-md-lsP" secondAttribute="trailing" constant="8" id="RmN-Xg-yvU"/>
+                                                        <constraint firstItem="afr-md-lsP" firstAttribute="centerY" secondItem="H0g-xx-bsy" secondAttribute="centerY" constant="2.25" id="Vfp-aG-yzu"/>
+                                                        <constraint firstItem="afr-md-lsP" firstAttribute="leading" secondItem="rfu-Rr-UJj" secondAttribute="leadingMargin" id="f9M-9M-ruG"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2zN-Km-MeU" secondAttribute="bottom" constant="19" id="mHG-3l-rRg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VZd-s2-Q8b" firstAttribute="top" secondItem="5YE-4F-rBo" secondAttribute="bottom" constant="8" id="0jw-NA-kQV"/>
+                                        <constraint firstItem="VZd-s2-Q8b" firstAttribute="top" secondItem="NRn-dq-IvD" secondAttribute="top" constant="56" id="C7Z-yu-e3f"/>
+                                        <constraint firstItem="Ka4-ww-yEe" firstAttribute="leading" secondItem="NRn-dq-IvD" secondAttribute="leadingMargin" constant="1" id="EMl-2r-ZO4"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VZd-s2-Q8b" secondAttribute="bottom" constant="-17" id="J2U-xl-DYq"/>
+                                        <constraint firstItem="5YE-4F-rBo" firstAttribute="leading" secondItem="NRn-dq-IvD" secondAttribute="leadingMargin" id="J91-lB-GNo"/>
+                                        <constraint firstItem="pJP-dd-8md" firstAttribute="leading" secondItem="rvW-Rv-bzp" secondAttribute="leading" id="LeV-V4-dGJ"/>
+                                        <constraint firstItem="5YE-4F-rBo" firstAttribute="top" secondItem="rvW-Rv-bzp" secondAttribute="bottom" constant="2" id="SuG-cn-5rX"/>
+                                        <constraint firstItem="VZd-s2-Q8b" firstAttribute="leading" secondItem="NRn-dq-IvD" secondAttribute="leadingMargin" constant="12" id="UIW-bo-mFr"/>
+                                        <constraint firstItem="Ka4-ww-yEe" firstAttribute="top" secondItem="pJP-dd-8md" secondAttribute="top" id="gVx-yo-Xxx"/>
+                                        <constraint firstItem="5YE-4F-rBo" firstAttribute="centerX" secondItem="NRn-dq-IvD" secondAttribute="centerX" id="imT-2R-m6i"/>
+                                        <constraint firstItem="rvW-Rv-bzp" firstAttribute="top" secondItem="pJP-dd-8md" secondAttribute="bottom" constant="1" id="nDH-mc-api"/>
+                                        <constraint firstItem="Ka4-ww-yEe" firstAttribute="top" secondItem="NRn-dq-IvD" secondAttribute="topMargin" constant="6" id="nn9-bV-b81"/>
+                                        <constraint firstItem="rvW-Rv-bzp" firstAttribute="leading" secondItem="NRn-dq-IvD" secondAttribute="leadingMargin" constant="25" id="oMH-3V-nZX"/>
+                                        <constraint firstItem="pJP-dd-8md" firstAttribute="leading" secondItem="Ka4-ww-yEe" secondAttribute="trailing" constant="10" id="xI1-WV-rTe"/>
+                                        <constraint firstItem="5YE-4F-rBo" firstAttribute="centerX" secondItem="VZd-s2-Q8b" secondAttribute="centerX" id="zu2-Oo-Tmc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblClusterManagerCount" destination="NeV-YZ-VZ6" id="H7l-je-GqL"/>
+                                    <outlet property="lblStationLocation" destination="rvW-Rv-bzp" id="zCC-kd-S7l"/>
+                                    <outlet property="lblStationManagerCount" destination="H0g-xx-bsy" id="SWa-rd-PrE"/>
+                                    <outlet property="lblStationName" destination="pJP-dd-8md" id="EoH-C8-jAD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IYt-MH-UuE" id="ha1-FK-FYf"/>
+                            <outlet property="delegate" destination="IYt-MH-UuE" id="gMS-QF-9nC"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="icon_managers" id="Lxf-a3-aKY"/>
+                    <navigationItem key="navigationItem" id="hTB-ls-wHh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lE-eL-lRP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-924.375" y="566.19718309859161"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Group 481" width="14.5" height="14.5"/>
         <image name="icon_Grid_New" width="320" height="89"/>
         <image name="icon_Logo_Small" width="34" height="31.333333969116211"/>
         <image name="icon_arrow_forward" width="24" height="24"/>
@@ -381,6 +534,8 @@
         <image name="icon_notifcation" width="14" height="16.666666030883789"/>
         <image name="icon_profile" width="16" height="16"/>
         <image name="icon_shutdowns" width="24" height="24"/>
+        <image name="icon_station" width="17" height="18.666666030883789"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="stick-man" width="14.5" height="14.5"/>
     </resources>
 </document>

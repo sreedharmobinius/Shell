@@ -39,6 +39,12 @@ class PassWordViewController: UIViewController {
     
     fileprivate func configureView() {
         btnDone.layer.cornerRadius = 10
+        //        newPasswordTextField.layer.borderWidth = 0.5
+        //        newPasswordTextField.layer.cornerRadius = 10
+        //        newPasswordTextField.layer.borderColor = UIColor.gray.cgColor
+        //        confirmPasswordTextField.layer.borderWidth = 0.5
+        //        confirmPasswordTextField.layer.cornerRadius = 10
+        //        confirmPasswordTextField.layer.borderColor = UIColor.gray.cgColor
     }
     
     

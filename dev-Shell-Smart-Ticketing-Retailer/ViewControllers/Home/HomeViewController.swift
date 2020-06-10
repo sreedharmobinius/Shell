@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: StoryBoardConstants.nibs.HomeTableViewCell, bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
+        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: cellReuseIdentifier)
         // Do any additional setup after loading the view.
     }
     
@@ -70,9 +70,9 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         }
         
 
-        settingsActionSheet.addAction(UIAlertAction(title: NSLocalizedString("STATION_DETAILS", comment: "STATION_DETAILS"), style:UIAlertAction.Style.default, handler:{ action in
+        settingsActionSheet.addAction(UIAlertAction(title:"View Station Details", style:UIAlertAction.Style.default, handler:{ action in
         }))
-        settingsActionSheet.addAction(UIAlertAction(title: NSLocalizedString("CANCEL", comment: "CANCEL"), style:UIAlertAction.Style.cancel, handler:nil))
+        settingsActionSheet.addAction(UIAlertAction(title:"Cancel", style:UIAlertAction.Style.cancel, handler:nil))
         present(settingsActionSheet, animated:true, completion:nil)
     }
     

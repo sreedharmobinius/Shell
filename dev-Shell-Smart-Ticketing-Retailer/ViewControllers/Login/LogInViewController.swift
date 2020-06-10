@@ -31,6 +31,12 @@ class LogInViewController: UIViewController {
     
     fileprivate func configureView() {
         btnLogIn.layer.cornerRadius = 10
+        //        phoneNoTextField.layer.cornerRadius = 10
+        //        phoneNoTextField.layer.borderWidth = 0.5
+        //        phoneNoTextField.layer.borderColor = UIColor.gray.cgColor
+        //        passwordTextField.layer.cornerRadius = 10
+        //        passwordTextField.layer.borderWidth = 0.5
+        //        passwordTextField.layer.borderColor = UIColor.gray.cgColor
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {

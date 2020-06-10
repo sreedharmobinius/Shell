@@ -28,7 +28,11 @@ class EmailIdViewController: UIViewController {
         
     }
     fileprivate func configureView() {
-        btnSubmit.layer.cornerRadius = 10        
+        btnSubmit.layer.cornerRadius = 10
+        //        emailTextField.layer.cornerRadius = 10
+        //        emailTextField.layer.borderWidth = 0.5
+        //        emailTextField.layer.borderColor = UIColor.gray.cgColor
+        
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
