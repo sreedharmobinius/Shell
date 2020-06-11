@@ -3,11 +3,41 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7BB114CF2557EB035E008398 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */; };
+		A076ED75249246DF00993053 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED74249246DF00993053 /* LoginRestManager.swift */; };
+		A076ED76249246DF00993053 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED74249246DF00993053 /* LoginRestManager.swift */; };
+		A076ED7A2492499200993053 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED792492499200993053 /* LoginViewModel.swift */; };
+		A076ED7B2492499200993053 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED792492499200993053 /* LoginViewModel.swift */; };
+		A076ED7D24924B8100993053 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED7C24924B8100993053 /* User.swift */; };
+		A076ED7E24924B8100993053 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED7C24924B8100993053 /* User.swift */; };
+		A076ED8024924BA900993053 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED7F24924BA900993053 /* UserViewModel.swift */; };
+		A076ED8124924BA900993053 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED7F24924BA900993053 /* UserViewModel.swift */; };
+		A076ED8324924C2700993053 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED8224924C2700993053 /* LoginError.swift */; };
+		A076ED8424924C2700993053 /* LoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED8224924C2700993053 /* LoginError.swift */; };
+		A076ED8A249251CE00993053 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A076ED88249251CE00993053 /* MBProgressHUD.m */; };
+		A076ED8B249251CE00993053 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A076ED88249251CE00993053 /* MBProgressHUD.m */; };
+		A076ED8E2492520F00993053 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED8D2492520F00993053 /* UIViewController+ActivityIndicator.swift */; };
+		A076ED8F2492520F00993053 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED8D2492520F00993053 /* UIViewController+ActivityIndicator.swift */; };
+		A076ED91249254A100993053 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED90249254A100993053 /* Default.swift */; };
+		A076ED92249254A100993053 /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED90249254A100993053 /* Default.swift */; };
+		A076ED942492568F00993053 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED932492568F00993053 /* Connectivity.swift */; };
+		A076ED952492568F00993053 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED932492568F00993053 /* Connectivity.swift */; };
+		A076ED9824925E8D00993053 /* String+Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9724925E8D00993053 /* String+Verifier.swift */; };
+		A076ED9924925E8D00993053 /* String+Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9724925E8D00993053 /* String+Verifier.swift */; };
+		A0D7A4B5249094FD0017A0CC /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */; };
+		A0D7A4B6249094FD0017A0CC /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */; };
+		A0D7A4B8249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */; };
+		A0D7A4B9249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */; };
+		A0D7A4BB24909AE00017A0CC /* RestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4BA24909AE00017A0CC /* RestConstants.swift */; };
+		A0D7A4BC24909AE00017A0CC /* RestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4BA24909AE00017A0CC /* RestConstants.swift */; };
+		A0D7A4BE2490A0190017A0CC /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4BD2490A0190017A0CC /* CustomError.swift */; };
+		A0D7A4BF2490A0190017A0CC /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4BD2490A0190017A0CC /* CustomError.swift */; };
+		A0D7A4C52490A14B0017A0CC /* RegistrationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4C42490A14B0017A0CC /* RegistrationError.swift */; };
+		A0D7A4C62490A14B0017A0CC /* RegistrationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4C42490A14B0017A0CC /* RegistrationError.swift */; };
 		AF20975424726D6B0007E4DA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF20975324726D6B0007E4DA /* Home.storyboard */; };
 		AF2B8EC4247B9BD200A959F6 /* NewWorkOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */; };
 		AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF680684248514150078AD6D /* SelectEquipmentLayout.xib */; };
@@ -56,7 +86,6 @@
 		AF744C2324694CBF00F535F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF744C2224694CBF00F535F4 /* Login.storyboard */; };
 		AF8C82B02465355F00BE3508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82AF2465355F00BE3508 /* AppDelegate.swift */; };
 		AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82B12465355F00BE3508 /* SceneDelegate.swift */; };
-		AF8C82B42465355F00BE3508 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82B32465355F00BE3508 /* ViewController.swift */; };
 		AF8C82B72465355F00BE3508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF8C82B52465355F00BE3508 /* Main.storyboard */; };
 		AF8C82BA2465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF8C82B82465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld */; };
 		AF8C82BC2465356000BE3508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF8C82BB2465356000BE3508 /* Assets.xcassets */; };
@@ -84,6 +113,24 @@
 		2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; sourceTree = "<group>"; };
 		60A9900AB562CF7E6ADE6BA8 /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_Shell_Smart_Ticketing_Retailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-RetailerTests/Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A076ED74249246DF00993053 /* LoginRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRestManager.swift; sourceTree = "<group>"; };
+		A076ED792492499200993053 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A076ED7C24924B8100993053 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A076ED7F24924BA900993053 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A076ED8224924C2700993053 /* LoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginError.swift; sourceTree = "<group>"; };
+		A076ED86249251CD00993053 /* dev-Shell-Smart-Ticketing-Retailer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dev-Shell-Smart-Ticketing-Retailer-Bridging-Header.h"; sourceTree = "<group>"; };
+		A076ED87249251CE00993053 /* dev-Shell-Smart-Ticketing-RetailerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dev-Shell-Smart-Ticketing-RetailerTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		A076ED88249251CE00993053 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A076ED89249251CE00993053 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		A076ED8D2492520F00993053 /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		A076ED90249254A100993053 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		A076ED932492568F00993053 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		A076ED9724925E8D00993053 /* String+Verifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Verifier.swift"; sourceTree = "<group>"; };
+		A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
+		A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderRestManager.swift; sourceTree = "<group>"; };
+		A0D7A4BA24909AE00017A0CC /* RestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestConstants.swift; sourceTree = "<group>"; };
+		A0D7A4BD2490A0190017A0CC /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		A0D7A4C42490A14B0017A0CC /* RegistrationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationError.swift; sourceTree = "<group>"; };
 		AF20975324726D6B0007E4DA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewWorkOrder.storyboard; sourceTree = "<group>"; };
 		AF680684248514150078AD6D /* SelectEquipmentLayout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectEquipmentLayout.xib; sourceTree = "<group>"; };
@@ -133,7 +180,6 @@
 		AF8C82AC2465355F00BE3508 /* dev-Shell-Smart-Ticketing-Retailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dev-Shell-Smart-Ticketing-Retailer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF8C82AF2465355F00BE3508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF8C82B12465355F00BE3508 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF8C82B32465355F00BE3508 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF8C82B62465355F00BE3508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF8C82B92465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dev_Shell_Smart_Ticketing_Retailer.xcdatamodel; sourceTree = "<group>"; };
 		AF8C82BB2465356000BE3508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +225,100 @@
 				F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A076ED852492511400993053 /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED89249251CE00993053 /* MBProgressHUD.h */,
+				A076ED88249251CE00993053 /* MBProgressHUD.m */,
+				A076ED86249251CD00993053 /* dev-Shell-Smart-Ticketing-Retailer-Bridging-Header.h */,
+				A076ED87249251CE00993053 /* dev-Shell-Smart-Ticketing-RetailerTests-Bridging-Header.h */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		A076ED8C249251E600993053 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED8D2492520F00993053 /* UIViewController+ActivityIndicator.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A076ED9624925E4100993053 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED9724925E8D00993053 /* String+Verifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0A04B722490A2BB00D56D76 /* Utili */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED852492511400993053 /* Indicator */,
+				A076ED90249254A100993053 /* Default.swift */,
+			);
+			path = Utili;
+			sourceTree = "<group>";
+		};
+		A0A04B732490A2D300D56D76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED9624925E4100993053 /* Extensions */,
+				A0D7A4B1249090F10017A0CC /* Network */,
+				A0D7A4C02490A1210017A0CC /* Enum */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0D7A4AE249090A20017A0CC /* App+SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AF8C82AF2465355F00BE3508 /* AppDelegate.swift */,
+				AF8C82B12465355F00BE3508 /* SceneDelegate.swift */,
+			);
+			path = "App+SceneDelegate";
+			sourceTree = "<group>";
+		};
+		A0D7A4AF249090C00017A0CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED792492499200993053 /* LoginViewModel.swift */,
+				A076ED7F24924BA900993053 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0D7A4B0249090D10017A0CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A076ED7C24924B8100993053 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0D7A4B1249090F10017A0CC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */,
+				A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */,
+				A0D7A4BA24909AE00017A0CC /* RestConstants.swift */,
+				A076ED74249246DF00993053 /* LoginRestManager.swift */,
+				A076ED932492568F00993053 /* Connectivity.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A0D7A4C02490A1210017A0CC /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A0D7A4BD2490A0190017A0CC /* CustomError.swift */,
+				A0D7A4C42490A14B0017A0CC /* RegistrationError.swift */,
+				A076ED8224924C2700993053 /* LoginError.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		AF682D3D248B639600324D83 /* New Work Order */ = {
@@ -282,18 +422,12 @@
 		AF727583246AB279002AD121 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A076ED8C249251E600993053 /* Extension */,
 				AF6E4F84247BD1BB004BD793 /* New WorkOrder */,
 				AF6880D22473F18200D50BAA /* Home */,
 				AF69538F246A5A07003D72B8 /* Login */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		AF727584246AB292002AD121 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		AF7490D92469788800DDC5F0 /* Story Board */ = {
@@ -331,14 +465,15 @@
 		AF8C82AE2465355F00BE3508 /* dev-Shell-Smart-Ticketing-Retailer */ = {
 			isa = PBXGroup;
 			children = (
-				AF6B549224766A6600A02DEB /* Font */,
-				AF8C82AF2465355F00BE3508 /* AppDelegate.swift */,
-				AF8C82B12465355F00BE3508 /* SceneDelegate.swift */,
-				AF8C82B32465355F00BE3508 /* ViewController.swift */,
+				A0D7A4AE249090A20017A0CC /* App+SceneDelegate */,
 				AF7490D92469788800DDC5F0 /* Story Board */,
 				AF727583246AB279002AD121 /* ViewControllers */,
-				AF727584246AB292002AD121 /* Models */,
 				AF6880D52473F4B100D50BAA /* CustomCell */,
+				A0D7A4AF249090C00017A0CC /* ViewModel */,
+				A0D7A4B0249090D10017A0CC /* Model */,
+				A0A04B732490A2D300D56D76 /* Services */,
+				A0A04B722490A2BB00D56D76 /* Utili */,
+				AF6B549224766A6600A02DEB /* Font */,
 				AF8C82BB2465356000BE3508 /* Assets.xcassets */,
 				AF8C82C02465356000BE3508 /* Info.plist */,
 				AF706B54248F919C00D97B5E /* Localizable.strings */,
@@ -364,7 +499,6 @@
 				D1C6BB639FD2C3C064B7E975 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.debug.xcconfig */,
 				82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -421,9 +555,11 @@
 				TargetAttributes = {
 					AF8C82AB2465355F00BE3508 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1150;
 					};
 					AF8C82C42465356000BE3508 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1150;
 						TestTargetID = AF8C82AB2465355F00BE3508;
 					};
 				};
@@ -558,19 +694,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8C82B42465355F00BE3508 /* ViewController.swift in Sources */,
+				A076ED942492568F00993053 /* Connectivity.swift in Sources */,
+				A0D7A4B5249094FD0017A0CC /* RestAPIManager.swift in Sources */,
 				AF8C82B02465355F00BE3508 /* AppDelegate.swift in Sources */,
 				AF68068924851B620078AD6D /* SelectEquipmentLayoutTableViewCell.swift in Sources */,
 				AF72758E246AB41F002AD121 /* EmailIdViewController.swift in Sources */,
+				A076ED75249246DF00993053 /* LoginRestManager.swift in Sources */,
+				A0D7A4BB24909AE00017A0CC /* RestConstants.swift in Sources */,
+				A0D7A4B8249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */,
 				AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */,
 				AF6E4F86247BD216004BD793 /* NewWorkOrderDetailViewController.swift in Sources */,
+				A076ED9824925E8D00993053 /* String+Verifier.swift in Sources */,
 				AF680695248531F40078AD6D /* TableViewHeader.swift in Sources */,
+				A0D7A4C52490A14B0017A0CC /* RegistrationError.swift in Sources */,
 				AF72758A246AB3BE002AD121 /* PassWordViewController.swift in Sources */,
 				AF706B58248FA00600D97B5E /* UIConstants.swift in Sources */,
 				AF6AB0FE2487DA1100E9B712 /* VehicleTypeTableViewCell.swift in Sources */,
+				A076ED8A249251CE00993053 /* MBProgressHUD.m in Sources */,
 				AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */,
 				AF959E872477C45B0082076C /* NewWorkOrderViewController.swift in Sources */,
 				AF733A97248D48B200284239 /* DefaultTableViewCell.swift in Sources */,
+				A076ED7D24924B8100993053 /* User.swift in Sources */,
+				A076ED8024924BA900993053 /* UserViewModel.swift in Sources */,
 				AF682D40248B781700324D83 /* WorkOrderDetailHeaderCell.swift in Sources */,
 				AF68068D24852A310078AD6D /* SelectDispensorCategoryTableViewCell.swift in Sources */,
 				AF682D44248B981E00324D83 /* PreliminaryCheckTableViewCell.swift in Sources */,
@@ -578,12 +723,17 @@
 				AF6F03092477FEA400916CDE /* HomeTabBarViewController.swift in Sources */,
 				AF680687248517300078AD6D /* SelectEquipmentViewController.swift in Sources */,
 				AF6880DA2473F53A00D50BAA /* HomeTableViewCell.swift in Sources */,
+				A076ED8324924C2700993053 /* LoginError.swift in Sources */,
 				AF682D48248B9F5A00324D83 /* PhotoEvidenceTableViewCell.swift in Sources */,
+				A076ED8E2492520F00993053 /* UIViewController+ActivityIndicator.swift in Sources */,
 				AF9B5CF1248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.swift in Sources */,
 				AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */,
+				A076ED91249254A100993053 /* Default.swift in Sources */,
+				A076ED7A2492499200993053 /* LoginViewModel.swift in Sources */,
 				AF73F5A4248A318400E9D9D6 /* FailureModeTableViewCell.swift in Sources */,
 				AF73F5A7248A34A800E9D9D6 /* FailureModeViewController.swift in Sources */,
 				AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */,
+				A0D7A4BE2490A0190017A0CC /* CustomError.swift in Sources */,
 				AF6AB1012487E15200E9B712 /* SelectedAreaView.swift in Sources */,
 				AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */,
 				AF8C82BA2465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld in Sources */,
@@ -598,6 +748,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D7A4C62490A14B0017A0CC /* RegistrationError.swift in Sources */,
+				A076ED8424924C2700993053 /* LoginError.swift in Sources */,
+				A076ED952492568F00993053 /* Connectivity.swift in Sources */,
+				A0D7A4BF2490A0190017A0CC /* CustomError.swift in Sources */,
+				A076ED76249246DF00993053 /* LoginRestManager.swift in Sources */,
+				A076ED8124924BA900993053 /* UserViewModel.swift in Sources */,
+				A0D7A4B9249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */,
+				A076ED7B2492499200993053 /* LoginViewModel.swift in Sources */,
+				A076ED8B249251CE00993053 /* MBProgressHUD.m in Sources */,
+				A076ED7E24924B8100993053 /* User.swift in Sources */,
+				A076ED92249254A100993053 /* Default.swift in Sources */,
+				A076ED8F2492520F00993053 /* UIViewController+ActivityIndicator.swift in Sources */,
+				A0D7A4BC24909AE00017A0CC /* RestConstants.swift in Sources */,
+				A0D7A4B6249094FD0017A0CC /* RestAPIManager.swift in Sources */,
+				A076ED9924925E8D00993053 /* String+Verifier.swift in Sources */,
 				AF8C82CA2465356000BE3508 /* dev_Shell_Smart_Ticketing_RetailerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,6 +916,7 @@
 			baseConfigurationReference = 2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7G38S6868;
 				INFOPLIST_FILE = "dev-Shell-Smart-Ticketing-Retailer/Info.plist";
@@ -761,6 +927,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.dev-Shell-Smart-Ticketing-Retailer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dev-Shell-Smart-Ticketing-Retailer/Utili/Indicator/dev-Shell-Smart-Ticketing-Retailer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -771,6 +939,7 @@
 			baseConfigurationReference = EDEC580829F2B3B7A309BB19 /* Pods-dev-Shell-Smart-Ticketing-Retailer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L7G38S6868;
 				INFOPLIST_FILE = "dev-Shell-Smart-Ticketing-Retailer/Info.plist";
@@ -781,6 +950,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.dev-Shell-Smart-Ticketing-Retailer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dev-Shell-Smart-Ticketing-Retailer/Utili/Indicator/dev-Shell-Smart-Ticketing-Retailer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -792,6 +962,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "dev-Shell-Smart-Ticketing-RetailerTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -802,6 +973,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.dev-Shell-Smart-Ticketing-RetailerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dev-Shell-Smart-Ticketing-Retailer/Utili/Indicator/dev-Shell-Smart-Ticketing-RetailerTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-Shell-Smart-Ticketing-Retailer.app/dev-Shell-Smart-Ticketing-Retailer";
@@ -814,6 +987,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "dev-Shell-Smart-Ticketing-RetailerTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -824,6 +998,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "iOS.dev-Shell-Smart-Ticketing-RetailerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "dev-Shell-Smart-Ticketing-Retailer/Utili/Indicator/dev-Shell-Smart-Ticketing-RetailerTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dev-Shell-Smart-Ticketing-Retailer.app/dev-Shell-Smart-Ticketing-Retailer";
