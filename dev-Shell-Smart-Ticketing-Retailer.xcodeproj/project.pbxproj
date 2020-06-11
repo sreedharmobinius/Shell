@@ -28,6 +28,8 @@
 		A076ED952492568F00993053 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED932492568F00993053 /* Connectivity.swift */; };
 		A076ED9824925E8D00993053 /* String+Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9724925E8D00993053 /* String+Verifier.swift */; };
 		A076ED9924925E8D00993053 /* String+Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9724925E8D00993053 /* String+Verifier.swift */; };
+		A076ED9B24926FF000993053 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9A24926FF000993053 /* Logger.swift */; };
+		A076ED9C24926FF000993053 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED9A24926FF000993053 /* Logger.swift */; };
 		A0D7A4B5249094FD0017A0CC /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */; };
 		A0D7A4B6249094FD0017A0CC /* RestAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */; };
 		A0D7A4B8249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */; };
@@ -126,6 +128,7 @@
 		A076ED90249254A100993053 /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
 		A076ED932492568F00993053 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		A076ED9724925E8D00993053 /* String+Verifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Verifier.swift"; sourceTree = "<group>"; };
+		A076ED9A24926FF000993053 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPIManager.swift; sourceTree = "<group>"; };
 		A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderRestManager.swift; sourceTree = "<group>"; };
 		A0D7A4BA24909AE00017A0CC /* RestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestConstants.swift; sourceTree = "<group>"; };
@@ -259,6 +262,7 @@
 			children = (
 				A076ED852492511400993053 /* Indicator */,
 				A076ED90249254A100993053 /* Default.swift */,
+				A076ED9A24926FF000993053 /* Logger.swift */,
 			);
 			path = Utili;
 			sourceTree = "<group>";
@@ -701,6 +705,7 @@
 				AF72758E246AB41F002AD121 /* EmailIdViewController.swift in Sources */,
 				A076ED75249246DF00993053 /* LoginRestManager.swift in Sources */,
 				A0D7A4BB24909AE00017A0CC /* RestConstants.swift in Sources */,
+				A076ED9B24926FF000993053 /* Logger.swift in Sources */,
 				A0D7A4B8249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */,
 				AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */,
 				AF6E4F86247BD216004BD793 /* NewWorkOrderDetailViewController.swift in Sources */,
@@ -756,6 +761,7 @@
 				A076ED8124924BA900993053 /* UserViewModel.swift in Sources */,
 				A0D7A4B9249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */,
 				A076ED7B2492499200993053 /* LoginViewModel.swift in Sources */,
+				A076ED9C24926FF000993053 /* Logger.swift in Sources */,
 				A076ED8B249251CE00993053 /* MBProgressHUD.m in Sources */,
 				A076ED7E24924B8100993053 /* User.swift in Sources */,
 				A076ED92249254A100993053 /* Default.swift in Sources */,
