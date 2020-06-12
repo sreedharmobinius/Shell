@@ -48,10 +48,54 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
         
         @IBOutlet weak var sixthVerticalButton: UIButton!
         
-       
-        
         
         @IBOutlet weak var dispenserButtonCollectionView: UIStackView!
+    
+    
+    
+    @IBOutlet weak var horizontalDispenserSuperView: UIView!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackView: UIStackView!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackView: UIStackView!
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewFirstButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewSecondButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewThirdButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewFourthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewFifthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutFirstVerticalStackViewSixthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewFirstButton: UIButton!
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewSecondButton: UIButton!
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewThirdButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewFourthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewFifthButton: UIButton!
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewSixthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewSeventhButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewEighthButton: UIButton!
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewNinethButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewTenthButton: UIButton!
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewEleventhButton: UIButton!
+    
+    
+    @IBOutlet weak var horizontalLayoutSecondVerticalStackViewTwelevethButton: UIButton!
+    
+    
+    
+    
+    
+    
         
         override func awakeFromNib() {
             super.awakeFromNib()
@@ -64,7 +108,7 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
             // Configure the view for the selected state
         }
         
-        func hideAll(){
+        func hideAllForVerticalLayout(){
             let stackViews = [firstHorizontalStackView,secondHorizontalStackView,thirdHorizontalStackView,fourthHorizontalStackView,fifthHorizontalStackView,sixthHorizontalStackView]
             
             for view in stackViews{
@@ -76,52 +120,69 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
             }
            
         }
+    
+    func hideAllForHorizontalLayout(){
+        
+        let stackViewsAndButtons = [horizontalLayoutFirstVerticalStackView,horizontalLayoutSecondVerticalStackView,   horizontalLayoutFirstVerticalStackViewFirstButton,horizontalLayoutFirstVerticalStackViewSecondButton, horizontalLayoutFirstVerticalStackViewThirdButton,horizontalLayoutFirstVerticalStackViewFourthButton,horizontalLayoutFirstVerticalStackViewFifthButton,horizontalLayoutFirstVerticalStackViewSixthButton,horizontalLayoutSecondVerticalStackViewFirstButton,horizontalLayoutSecondVerticalStackViewSecondButton,horizontalLayoutSecondVerticalStackViewThirdButton,horizontalLayoutSecondVerticalStackViewFourthButton,horizontalLayoutSecondVerticalStackViewFifthButton,horizontalLayoutSecondVerticalStackViewSixthButton,horizontalLayoutSecondVerticalStackViewSeventhButton,horizontalLayoutSecondVerticalStackViewEighthButton,horizontalLayoutSecondVerticalStackViewNinethButton,horizontalLayoutSecondVerticalStackViewTenthButton,horizontalLayoutSecondVerticalStackViewEleventhButton,horizontalLayoutSecondVerticalStackViewTwelevethButton
+        ]
+        for view in stackViewsAndButtons{
+            view?.isHidden = true
+        }
+        
+        
+        
+    }
+    
+    
         
         func showOrHideDispenserButton(count:Int){
-            hideAll()
-         // .addBorders(toSide: .Left, withColor: UIColor.redColor().CGColor, andThickness: 1.0)
-
+            hideAllForVerticalLayout()
+            horizontalDispenserSuperView.isHidden = true
+            
             if count == 1{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton])
                 
             }
-            if count == 2 {
+           else if count == 2 {
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondVerticalButton,secondHorizontalStackView])
 
             }
-            if count == 3{
+          else  if count == 3{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondVerticalButton,secondHorizontalStackView,thirdHorizontalStackView,thirdVerticalButton])
             }
             
-            if count == 4{
+           else if count == 4{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondVerticalButton,secondHorizontalStackView,thirdHorizontalStackView,thirdVerticalButton,fourthHorizontalStackView,fourthVerticalButton])
 
             }
-            if count == 5{
+           else if count == 5{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondVerticalButton,secondHorizontalStackView,thirdHorizontalStackView,thirdVerticalButton,fourthHorizontalStackView,fourthVerticalButton,fifthHorizontalStackView,fifthVerticalButton])
 
             }
             
-            if count == 6{
+          else  if count == 6{
       showButtonOrView(views:[firstHorizontalStackView,firstButton,secondVerticalButton,secondHorizontalStackView,thirdHorizontalStackView,thirdVerticalButton,fourthHorizontalStackView,fourthVerticalButton,fifthHorizontalStackView,fifthVerticalButton,sixthHorizontalStackView,sixthVerticalButton])
 
             }
             
-            if count == 8{
+         else  if count == 8{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondButton,secondHorizontalStackView,thirdButton,fourthButton,thirdHorizontalStackView,fifthButton,sixthButton,fourthHorizontalStackView,seventhButton,eighthButton])
                 
             }
             
-            if count == 10{
+           else if count == 10{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondButton,secondHorizontalStackView,thirdButton,fourthButton,thirdHorizontalStackView,fifthButton,sixthButton,fourthHorizontalStackView,seventhButton,eighthButton,fifthHorizontalStackView,ninethButton,tenthButton])
                 
             }
-            if count == 12{
+           else if count == 12{
                 showButtonOrView(views:[firstHorizontalStackView,firstButton,secondButton,secondHorizontalStackView,thirdButton,fourthButton,thirdHorizontalStackView,fifthButton,sixthButton,fourthHorizontalStackView,seventhButton,eighthButton,fifthHorizontalStackView,ninethButton,tenthButton])
                 sixthHorizontalStackView.isHidden = false
                 eleventhButton.isHidden = false
                 twelevethButton.isHidden = false
                 
+            }
+            else{
+                return
             }
             
         }
@@ -132,6 +193,44 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
             }
             
         }
+    
+    
+    func showOrHideHorizontalLayoutDispenserButton(count:Int){
+        hideAllForHorizontalLayout()
+        
+        if count == 1{
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFifthButton])
+        }
+        else if count == 2 {
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFifthButton,horizontalLayoutFirstVerticalStackViewSecondButton])
+
+        }
+        else if count == 3 {
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFifthButton,horizontalLayoutFirstVerticalStackViewSecondButton,horizontalLayoutFirstVerticalStackViewThirdButton])
+
+        }
+        
+        else if count == 4 {
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFifthButton,horizontalLayoutFirstVerticalStackViewSecondButton,horizontalLayoutFirstVerticalStackViewThirdButton,horizontalLayoutFirstVerticalStackViewFourthButton])
+            
+        }
+        
+        else if count == 5 {
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFirstButton,horizontalLayoutFirstVerticalStackViewSecondButton,horizontalLayoutFirstVerticalStackViewThirdButton,horizontalLayoutFirstVerticalStackViewFourthButton,horizontalLayoutFirstVerticalStackViewFifthButton])
+            
+        }
+        else if count == 6 {
+            showButtonOrView(views:[horizontalLayoutFirstVerticalStackView,horizontalLayoutFirstVerticalStackViewFirstButton,horizontalLayoutFirstVerticalStackViewSecondButton,horizontalLayoutFirstVerticalStackViewThirdButton,horizontalLayoutFirstVerticalStackViewFourthButton,horizontalLayoutFirstVerticalStackViewFifthButton,horizontalLayoutFirstVerticalStackViewSixthButton])
+             
+        }
+        
+        else if count == 8 {
+            showButtonOrView(views: [horizontalLayoutFirstVerticalStackView,horizontalLayoutSecondVerticalStackView,horizontalLayoutFirstVerticalStackViewFirstButton,horizontalLayoutFirstVerticalStackViewSecondButton,horizontalLayoutFirstVerticalStackViewThirdButton,horizontalLayoutFirstVerticalStackViewFourthButton,horizontalLayoutSecondVerticalStackViewFifthButton,horizontalLayoutSecondVerticalStackViewSixthButton,horizontalLayoutSecondVerticalStackViewSeventhButton,horizontalLayoutSecondVerticalStackViewEighthButton])
+            
+        }
+     
+        
+    }
         
    
 }
