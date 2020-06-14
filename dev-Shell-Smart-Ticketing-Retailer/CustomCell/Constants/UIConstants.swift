@@ -30,6 +30,8 @@ class StoryBoardConstants{
     struct  storyBoards {
         static let NewWorkOrderStoryBoard = "NewWorkOrder"
         static let HomeStoryBoard = "Home"
+        static let LoginStoryBoard = "Login"
+
         
         
     }
@@ -49,12 +51,22 @@ class StoryBoardConstants{
     
     struct  viewIds {
         static let DrillDownView = "DrillDownView"
-        static let Home = "Home"
+        static let HomeViewController = "Home"
         static let PreliminaryCheckTableViewCell = "PreliminaryCheckTableViewCell"
         static let PhotoEvidenceTableViewCell = "PhotoEvidenceTableViewCell"
         static let FailureModeViewController = "FailureModeViewController"
         static let NewWorkOrderDetails = "NewWorkOrderDetails"
+        static let EmailIdViewController = "EmailIdViewController"
 
+        
+        //Login flow
+        static let OTPViewController = "OTPViewController"
+        static let PhoneNumberViewController = "PhoneNumberViewController"
+        static let PassWordViewController = "PassWordViewController"
+        static let EmailFVerificationViewController = "EmailFVerificationViewController"
+        static let LogInViewController = "LogInViewController"
+
+        
         
         
     }

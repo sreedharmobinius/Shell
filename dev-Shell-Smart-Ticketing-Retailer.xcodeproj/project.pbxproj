@@ -66,6 +66,7 @@
 		AF9B5CF2248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */; };
 		AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F6246D195B0034109A /* OTPViewController.swift */; };
 		AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */; };
+		AFBE72E624939D0C0071BF53 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBE72E524939D0C0071BF53 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		AF9B5CF0248E79AA003BF73C /* PhotoEvidenceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoEvidenceCollectionViewCell.xib; sourceTree = "<group>"; };
 		AFB574F6246D195B0034109A /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		AFB574F8246D19E60034109A /* EmailFVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailFVerificationViewController.swift; sourceTree = "<group>"; };
+		AFBE72E524939D0C0071BF53 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 		AF727584246AB292002AD121 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFBE72E524939D0C0071BF53 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				AF727588246AB385002AD121 /* PhoneNumberViewController.swift in Sources */,
 				AF73F5A4248A318400E9D9D6 /* FailureModeTableViewCell.swift in Sources */,
 				AF73F5A7248A34A800E9D9D6 /* FailureModeViewController.swift in Sources */,
+				AFBE72E624939D0C0071BF53 /* LoginModel.swift in Sources */,
 				AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */,
 				AF6AB1012487E15200E9B712 /* SelectedAreaView.swift in Sources */,
 				AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */,

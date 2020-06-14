@@ -17,7 +17,7 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var searchView: UIView!
     
     let cellReuseIdentifier = "cell"
-
+    var loginResponse : LoginResponse?
     
     
     override func viewDidLoad() {

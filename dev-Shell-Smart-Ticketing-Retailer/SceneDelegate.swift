@@ -53,7 +53,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
-
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        
+            let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.LoginStoryBoard, bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.PhoneNumberViewController) as! PhoneNumberViewController
+            controller.titleString = NSLocalizedString("NEW_PHONE_NO", comment: "NEW_PHONE_NO")
+            controller.flow = NSLocalizedString("CHANGE_PHONE_NO_FLOW", comment: "CHANGE_PHONE_NO_FLOW")
+           let nav = UINavigationController(rootViewController: controller)
+           nav.navigationBar.isHidden = true
+           self.window?.rootViewController = nav
+        
+           self.window?.makeKeyAndVisible()
+    }
 
 }
 
