@@ -58,4 +58,8 @@ class StoryBoardConstants{
         
         
     }
+    
+    struct hexString {
+        static let hexStringForLayoutButtonColour = "#FFEBC2"
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA6553924953BAE0082F02E /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1FA6553824953BAE0082F02E /* Config.plist */; };
 		AF20975424726D6B0007E4DA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF20975324726D6B0007E4DA /* Home.storyboard */; };
 		AF2B8EC4247B9BD200A959F6 /* NewWorkOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */; };
 		AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF680684248514150078AD6D /* SelectEquipmentLayout.xib */; };
@@ -79,6 +80,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA6553824953BAE0082F02E /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		AF20975324726D6B0007E4DA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		AF2B8EC3247B9BD200A959F6 /* NewWorkOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewWorkOrder.storyboard; sourceTree = "<group>"; };
 		AF680684248514150078AD6D /* SelectEquipmentLayout.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectEquipmentLayout.xib; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				AF6880D52473F4B100D50BAA /* CustomCell */,
 				AF8C82BB2465356000BE3508 /* Assets.xcassets */,
 				AF8C82C02465356000BE3508 /* Info.plist */,
+				1FA6553824953BAE0082F02E /* Config.plist */,
 				AF706B54248F919C00D97B5E /* Localizable.strings */,
 				AF8C82B82465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld */,
 			);
@@ -428,6 +431,7 @@
 				AF680685248514150078AD6D /* SelectEquipmentLayout.xib in Resources */,
 				AF706B55248F919C00D97B5E /* Localizable.strings in Resources */,
 				AF8C82BF2465356000BE3508 /* LaunchScreen.storyboard in Resources */,
+				1FA6553924953BAE0082F02E /* Config.plist in Resources */,
 				AF682D45248B981E00324D83 /* PreliminaryCheckTableViewCell.xib in Resources */,
 				AF73F5A5248A318400E9D9D6 /* FailureModeTableViewCell.xib in Resources */,
 				AF6B549624766A9000A02DEB /* Montserrat-SemiBold.ttf in Resources */,
