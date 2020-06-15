@@ -113,6 +113,7 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
         let button = UIButton()
         if layout == "horizontal"{
             button.setImage(UIImage.init(named: "HorLayoutButton\(tag)"), for:.normal)
+           button.imageEdgeInsets.top = 5
         }
         else if layout == "vertical"{
             button.setImage(UIImage.init(named: "verLayoutButton\(tag)"), for:.normal)
@@ -120,7 +121,9 @@ class SelectEquipmentLayoutTableViewCell: UITableViewCell {
         }
         button.tag = tag
         button.addTarget(self, action: #selector(buttonTapped(sender: )), for:   UIControl.Event.touchUpInside)
-        button.backgroundColor = UIColor().HexToColor(hexString: StoryBoardConstants.hexString.hexStringForLayoutButtonColour, alpha: 1.0)
+        button.backgroundColor = UIColor().HexToColor(hexString: StoryBoardConstants.hexString.hexStringForSelectAreaLayoutButtonColour, alpha: 1.0)
+        button.layer.borderWidth = 0.5
+        button.layer.borderColor  = UIColor().HexToColor(hexString:StoryBoardConstants.hexString.hexStringForSelectAreaLayoutButtonBorderColour,alpha: 1.0 ).cgColor
         ViewName.spacing = 5
         ViewName.addArrangedSubview(button)
         print(button.tag)
