@@ -18,10 +18,15 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField4: UITextField!
     @IBOutlet weak var btnSubmit: UIButton!
     @IBOutlet weak var btnChangePhoneNO: UIButton!
-    
+    @IBOutlet weak var countDownLabel: UILabel!
     var shouldShowChangeBanner = false
     var user : String?
     var flow :String?
+    @IBOutlet weak var resendOTPButton: UIButton!
+    var releaseDate: NSDate?
+    var countdownTimer = Timer()
+    var timeRemaining = 120
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
@@ -35,7 +40,19 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         textField1.becomeFirstResponder()
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyBoard(_sender:)))
         self.view.addGestureRecognizer(tapGesture)
-        
+        startTimer()
+    }
+    func startTimer(){
+        countdownTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(OTPViewController.update), userInfo: nil, repeats: true)
+    }
+    
+    @objc func update() {
+        timeRemaining -= 1
+        if (timeRemaining >= 0){
+        let minutesLeft = Int(timeRemaining) / 60 % 60
+        let secondsLeft = Int(timeRemaining) % 60
+        countDownLabel.text = "\(minutesLeft):\(secondsLeft)"
+        }
     }
     
     @objc func dismissKeyBoard (_sender: UITapGestureRecognizer){
@@ -145,6 +162,11 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    @IBAction func resendOTPClicked(_ sender: Any) {
+        countdownTimer.invalidate()
+        timeRemaining = 120
+        startTimer()
+    }
 }
 
 

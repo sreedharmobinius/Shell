@@ -731,6 +731,29 @@
                                     <action selector="ChangePhoneNoClicked:" destination="Kt1-Zj-Fcd" eventType="touchUpInside" id="bD1-5K-HZ3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5N-Wd-DcC">
+                                <rect key="frame" x="135" y="306" width="50.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="18n-ZA-GKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                <color key="textColor" red="0.87058823529411766" green="0.11372549019607843" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHF-As-auF">
+                                <rect key="frame" x="84.5" y="358" width="151" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="mCo-N3-fmT"/>
+                                    <constraint firstAttribute="width" constant="151" id="rmb-Rr-Xce"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <state key="normal" title="Resend OTP">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resendOTPClicked:" destination="Kt1-Zj-Fcd" eventType="touchUpInside" id="Guz-rm-vbY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -740,20 +763,24 @@
                             <constraint firstItem="N41-j9-Ss7" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="51F-Zk-qys"/>
                             <constraint firstItem="Mmc-Ok-xBq" firstAttribute="centerY" secondItem="Hv0-5U-ySo" secondAttribute="centerY" id="5fn-fb-vA2"/>
                             <constraint firstItem="RF4-ti-cUo" firstAttribute="top" secondItem="zGv-Jb-htx" secondAttribute="top" id="6UK-9u-kbk"/>
+                            <constraint firstItem="I5N-Wd-DcC" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="8AB-36-LPJ"/>
                             <constraint firstItem="Hv0-5U-ySo" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="9qT-jx-t8R"/>
                             <constraint firstItem="cU8-iP-0J3" firstAttribute="top" secondItem="N41-j9-Ss7" secondAttribute="bottom" constant="5" id="B7J-N5-nLT"/>
                             <constraint firstItem="QXk-aq-LVx" firstAttribute="leading" secondItem="zGv-Jb-htx" secondAttribute="leading" constant="20" id="HjI-s2-kAX"/>
                             <constraint firstItem="zGv-Jb-htx" firstAttribute="trailing" secondItem="zMP-Es-GdN" secondAttribute="trailing" constant="21" id="Hw6-RJ-a7l"/>
                             <constraint firstItem="RF4-ti-cUo" firstAttribute="leading" secondItem="zGv-Jb-htx" secondAttribute="leading" id="N62-S3-A21"/>
+                            <constraint firstItem="lHF-As-auF" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="N69-bM-eJT"/>
                             <constraint firstItem="QXk-aq-LVx" firstAttribute="top" secondItem="hnj-Mx-eEg" secondAttribute="bottom" constant="9" id="OTT-SM-J2Z"/>
                             <constraint firstItem="eip-Fi-Iw4" firstAttribute="centerX" secondItem="RF4-ti-cUo" secondAttribute="centerX" id="U5n-iV-0nZ"/>
                             <constraint firstItem="eip-Fi-Iw4" firstAttribute="centerY" secondItem="RF4-ti-cUo" secondAttribute="centerY" id="bEp-qe-BAN"/>
                             <constraint firstItem="znZ-On-kG4" firstAttribute="top" secondItem="cU8-iP-0J3" secondAttribute="bottom" constant="1" id="bUa-lm-fyB"/>
                             <constraint firstItem="zMP-Es-GdN" firstAttribute="leading" secondItem="zGv-Jb-htx" secondAttribute="leading" constant="20" id="fK6-Wp-tF2"/>
+                            <constraint firstItem="lHF-As-auF" firstAttribute="top" secondItem="I5N-Wd-DcC" secondAttribute="bottom" constant="30" id="g5o-YL-C0x"/>
                             <constraint firstItem="QBK-9P-ygZ" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="h0e-2v-ibQ"/>
                             <constraint firstItem="znZ-On-kG4" firstAttribute="centerX" secondItem="zGv-Jb-htx" secondAttribute="centerX" id="hB0-43-eBk"/>
                             <constraint firstItem="N41-j9-Ss7" firstAttribute="top" secondItem="zGv-Jb-htx" secondAttribute="top" constant="6" id="i6G-dM-wr0"/>
                             <constraint firstItem="QBK-9P-ygZ" firstAttribute="centerY" secondItem="cU8-iP-0J3" secondAttribute="centerY" id="lDu-YZ-3pM"/>
+                            <constraint firstItem="I5N-Wd-DcC" firstAttribute="top" secondItem="zMP-Es-GdN" secondAttribute="bottom" constant="30" id="nnY-pD-AsE"/>
                             <constraint firstItem="cU8-iP-0J3" firstAttribute="trailing" secondItem="zGv-Jb-htx" secondAttribute="trailing" id="qWj-4a-J2v"/>
                             <constraint firstItem="zMP-Es-GdN" firstAttribute="top" secondItem="QXk-aq-LVx" secondAttribute="bottom" constant="23" id="r6z-Lk-JIn"/>
                             <constraint firstItem="zGv-Jb-htx" firstAttribute="bottom" secondItem="Hv0-5U-ySo" secondAttribute="bottom" constant="20" id="sKA-GO-7hg"/>
@@ -769,8 +796,10 @@
                     <connections>
                         <outlet property="btnChangePhoneNO" destination="z6L-65-eKR" id="DjC-I4-1KY"/>
                         <outlet property="btnSubmit" destination="Hv0-5U-ySo" id="XCL-3D-92O"/>
+                        <outlet property="countDownLabel" destination="I5N-Wd-DcC" id="siO-zM-KLX"/>
                         <outlet property="lblDescp" destination="QXk-aq-LVx" id="luv-sb-QGd"/>
                         <outlet property="lblPhoneNo" destination="hnj-Mx-eEg" id="IDd-kA-f7V"/>
+                        <outlet property="resendOTPButton" destination="lHF-As-auF" id="emi-1s-r0S"/>
                         <outlet property="textField1" destination="7qM-Fc-Cc0" id="ug2-Bb-7NN"/>
                         <outlet property="textField2" destination="qf0-mn-Us1" id="pUT-Ze-5VE"/>
                         <outlet property="textField3" destination="Ex6-ww-mM7" id="bls-Zv-ecC"/>
