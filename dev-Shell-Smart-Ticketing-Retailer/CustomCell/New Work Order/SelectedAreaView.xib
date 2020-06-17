@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,8 +23,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispensors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11F-Mv-4qY">
-                        <rect key="frame" x="84" y="25" width="76" height="16"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-QG-UuO">
+                        <rect key="frame" x="27" y="0.0" width="1" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FP-a3-EtT">
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auA-vG-sp1">
+                                <rect key="frame" x="0.0" y="11" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwC-je-XCw">
+                                <rect key="frame" x="0.0" y="22" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BkT-sZ-C8T">
+                                <rect key="frame" x="0.0" y="33" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4O-FS-OS2">
+                                <rect key="frame" x="0.0" y="44" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="5JL-G6-bWV"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Dispensors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11F-Mv-4qY">
+                        <rect key="frame" x="84" y="24.5" width="76" height="16.5"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="GyW-XK-dLh"/>
                         </constraints>
@@ -47,7 +75,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Area" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bff-hb-P2j">
-                        <rect key="frame" x="84" y="10" width="26" height="14"/>
+                        <rect key="frame" x="84" y="10" width="26" height="13.5"/>
                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -64,9 +92,11 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="RF4-je-BIE" firstAttribute="top" secondItem="IOz-Mg-qGz" secondAttribute="top" id="05h-5l-Vg1"/>
+                    <constraint firstItem="fUR-QG-UuO" firstAttribute="top" secondItem="IOz-Mg-qGz" secondAttribute="top" id="8x9-Eo-EZD"/>
                     <constraint firstItem="KfW-hg-io2" firstAttribute="centerY" secondItem="IOz-Mg-qGz" secondAttribute="centerY" id="9xY-JP-Ego"/>
                     <constraint firstItem="11F-Mv-4qY" firstAttribute="leading" secondItem="Bff-hb-P2j" secondAttribute="leading" id="G0E-OM-76k"/>
                     <constraint firstAttribute="trailing" secondItem="RF4-je-BIE" secondAttribute="trailing" id="Nvt-Bt-qaa"/>
+                    <constraint firstAttribute="bottom" secondItem="fUR-QG-UuO" secondAttribute="bottom" id="Px0-tk-n9H"/>
                     <constraint firstItem="KfW-hg-io2" firstAttribute="leading" secondItem="IOz-Mg-qGz" secondAttribute="leading" constant="50" id="Q7G-7K-0q1"/>
                     <constraint firstItem="Bff-hb-P2j" firstAttribute="top" secondItem="IOz-Mg-qGz" secondAttribute="top" constant="10" id="dfx-h0-wXb"/>
                     <constraint firstAttribute="bottom" secondItem="11F-Mv-4qY" secondAttribute="bottom" constant="9" id="f2b-3D-r9M"/>
@@ -74,6 +104,7 @@
                     <constraint firstItem="Pg2-lf-d51" firstAttribute="leading" secondItem="IOz-Mg-qGz" secondAttribute="leading" constant="20" id="nVa-0V-AB3"/>
                     <constraint firstItem="Pg2-lf-d51" firstAttribute="centerY" secondItem="KfW-hg-io2" secondAttribute="centerY" id="qCO-2s-o2N"/>
                     <constraint firstItem="11F-Mv-4qY" firstAttribute="top" secondItem="Bff-hb-P2j" secondAttribute="bottom" constant="1" id="yc2-NB-dTo"/>
+                    <constraint firstItem="fUR-QG-UuO" firstAttribute="leading" secondItem="IOz-Mg-qGz" secondAttribute="leading" constant="27" id="zFm-co-LTn"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

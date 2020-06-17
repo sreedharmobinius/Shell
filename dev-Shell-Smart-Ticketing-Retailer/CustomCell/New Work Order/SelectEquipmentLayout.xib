@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Wky-1S-QC0">
-                        <rect key="frame" x="0.0" y="0.0" width="613" height="1014.0000000000001"/>
+                        <rect key="frame" x="0.0" y="0.0" width="613" height="1014"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Z7U-s7-Fay">
@@ -125,7 +125,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="197.5" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verIngressImage" translatesAutoresizingMaskIntoConstraints="NO" id="8hU-ll-j7N">
-                                        <rect key="frame" x="0.0" y="0.0" width="197.50000000000003" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="197.5" height="80"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGG-yV-Gad">
                                         <rect key="frame" x="5" y="29.5" width="187.5" height="21"/>
@@ -227,7 +227,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="fdp-Vv-sIf">
-                                <rect key="frame" x="0.0" y="70" width="120" height="599.00000000000011"/>
+                                <rect key="frame" x="0.0" y="70" width="120" height="599"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,7 +287,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="453" height="854"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="GsG-5x-Zil">
-                                        <rect key="frame" x="0.0" y="0.0" width="453" height="854.00000000000011"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="453" height="854"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qqc-Xz-tDr">
                                         <rect key="frame" x="5" y="5" width="443" height="30"/>
@@ -513,7 +513,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="249.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horIngressImage" translatesAutoresizingMaskIntoConstraints="NO" id="qjy-qa-ooE">
-                                                <rect key="frame" x="0.0" y="0.0" width="70" height="249.50000000000006"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="249.5"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-aC-ikn">
                                                 <rect key="frame" x="20" y="114.5" width="45" height="21"/>
@@ -631,7 +631,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="363" height="140"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-2g-Ifh">
-                                        <rect key="frame" x="0.0" y="60" width="293" height="80.000000000000114"/>
+                                        <rect key="frame" x="0.0" y="60" width="293" height="80"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELECTRICAL PANEL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-gh-sNI">
                                         <rect key="frame" x="146.5" y="22" width="70" height="30"/>
@@ -779,7 +779,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="368" height="699"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="58v-0L-o2g">
-                                        <rect key="frame" x="0.0" y="0.0" width="298" height="639.00000000000011"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="639"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-oP-KkK">
                                         <rect key="frame" x="308" y="0.0" width="60" height="80"/>
@@ -846,7 +846,7 @@
                                 <rect key="frame" x="85" y="75" width="443" height="884"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBackGround" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-ng-UXF">
-                                        <rect key="frame" x="0.0" y="0.0" width="443" height="884.00000000000011"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="443" height="884"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMV-iR-zYu">
                                         <rect key="frame" x="5" y="5" width="433" height="30"/>

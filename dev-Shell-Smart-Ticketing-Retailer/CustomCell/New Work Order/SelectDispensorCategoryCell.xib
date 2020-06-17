@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -73,10 +73,41 @@
                             <constraint firstItem="zkU-Kd-NbQ" firstAttribute="leading" secondItem="xxv-zc-abo" secondAttribute="leading" constant="20" id="zhW-HT-zaT"/>
                         </constraints>
                     </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6X1-JO-3mL">
+                        <rect key="frame" x="27" y="0.0" width="1" height="50"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pB-8i-wK6">
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-L8-JNr">
+                                <rect key="frame" x="0.0" y="11" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkG-en-Gjb">
+                                <rect key="frame" x="0.0" y="22" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-FP-lir">
+                                <rect key="frame" x="0.0" y="33" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wN-63-mSp">
+                                <rect key="frame" x="0.0" y="44" width="1" height="6"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="1p0-0R-5qe"/>
+                        </constraints>
+                    </stackView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="6X1-JO-3mL" firstAttribute="leading" secondItem="LnG-Bb-a09" secondAttribute="leading" constant="27" id="8M4-kr-PDN"/>
+                    <constraint firstAttribute="bottom" secondItem="6X1-JO-3mL" secondAttribute="bottom" id="9vK-a2-MXH"/>
                     <constraint firstItem="xxv-zc-abo" firstAttribute="top" secondItem="LnG-Bb-a09" secondAttribute="top" id="MiE-em-uSz"/>
                     <constraint firstAttribute="bottom" secondItem="xxv-zc-abo" secondAttribute="bottom" id="RSV-Ku-aVM"/>
+                    <constraint firstItem="6X1-JO-3mL" firstAttribute="top" secondItem="LnG-Bb-a09" secondAttribute="top" id="Ry9-Hf-PIG"/>
                     <constraint firstItem="xxv-zc-abo" firstAttribute="leading" secondItem="LnG-Bb-a09" secondAttribute="leading" id="S1K-pf-KkR"/>
                     <constraint firstAttribute="trailing" secondItem="xxv-zc-abo" secondAttribute="trailing" id="qdC-fd-Sgn"/>
                 </constraints>

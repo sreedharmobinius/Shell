@@ -23,17 +23,6 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        let lineLayer = CAShapeLayer()
-        lineLayer.strokeColor = UIColor.blue.cgColor
-        lineLayer.lineWidth = 1
-        lineLayer.lineDashPattern = [4,4]
-        let path = CGMutablePath()
-        path.addLines(between: [CGPoint(x: 27, y: 100),
-                                CGPoint(x: 27, y: 500)])
-        lineLayer.path = path
-        self.view.layer.addSublayer(lineLayer)
-        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         tableView.estimatedRowHeight = UITableView.automaticDimension
