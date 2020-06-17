@@ -8,24 +8,20 @@
 
 import UIKit
 
+struct Dispenser:Codable{
+    var layout : String?
+    var columnCount:Int?
+    var rowCount:Int?
+}
+
 class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
-    
+    var dispenserCollection:[Dispenser]?
+
     @IBOutlet weak var tableView: UITableView!
     var arrayHeader = [1,1,1,1,1]
     var headerView : UITableViewCell?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let lineLayer = CAShapeLayer()
-        lineLayer.strokeColor = UIColor.blue.cgColor
-        lineLayer.lineWidth = 1
-        lineLayer.lineDashPattern = [4,4]
-        let path = CGMutablePath()
-        path.addLines(between: [CGPoint(x: 27, y: 100),
-                                CGPoint(x: 27, y: 500)])
-        lineLayer.path = path
-        self.view.layer.addSublayer(lineLayer)
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -38,14 +34,30 @@ class SelectEquipmentViewController: UIViewController,UITableViewDelegate, UITab
         tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectDispensorCategoryCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectDispensorCategoryCell)
         tableView.register(UINib(nibName: StoryBoardConstants.nibs.VehicleTypeTableViewCell, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.VehicleTypeTableViewCell)
         tableView.register(UINib(nibName: StoryBoardConstants.nibs.SelectedAreaView, bundle: nil), forCellReuseIdentifier: StoryBoardConstants.cellIds.SelectedAreaView)
-        
+        dispenserCollection = parseConfig()
+       
+    }
+    
+    
+    func parseConfig() -> [Dispenser] {
+        let url = Bundle.main.url(forResource: "Config", withExtension: "plist")!
+        let data = try! Data(contentsOf: url)
+        let decoder = PropertyListDecoder()
+        return try! decoder.decode([Dispenser].self, from: data)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : UITableViewCell!
         switch indexPath.section {
         case 0:
-            cell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectEquipmentLayout, for: indexPath)
+          let   customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectEquipmentLayout, for: indexPath) as! SelectEquipmentLayoutTableViewCell
+            if dispenserCollection?.first?.layout == "horizontal"{
+    customCell.drawDispenserForHorizontalLayout(rowCount:(dispenserCollection?.first!.rowCount)!,columnCount:(dispenserCollection?.first!.columnCount)!)
+            }
+            else{
+    customCell.drawDispenserForVerticalLayout(rowCount:(dispenserCollection?.first!.rowCount)!,columnCount:(dispenserCollection?.first!.columnCount)!)
+            }
+          cell = customCell
             break
         case 1:
             let  customCell = tableView.dequeueReusableCell(withIdentifier: StoryBoardConstants.cellIds.SelectDispensorCategoryCell, for: indexPath) as! SelectDispensorCategoryTableViewCell

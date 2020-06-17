@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +18,34 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-z9-C48">
+                    <rect key="frame" x="27" y="0.0" width="1" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7C-LR-UhW">
+                            <rect key="frame" x="0.0" y="0.0" width="1" height="7"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHM-W0-pBl">
+                            <rect key="frame" x="0.0" y="11" width="1" height="6.5"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LG8-gd-dBv">
+                            <rect key="frame" x="0.0" y="21.5" width="1" height="7"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdw-tp-QMQ">
+                            <rect key="frame" x="0.0" y="32.5" width="1" height="6.5"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uoq-Qs-5rn">
+                            <rect key="frame" x="0.0" y="43" width="1" height="7"/>
+                            <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="vXz-Rs-1wf"/>
+                    </constraints>
+                </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjK-gS-Qjk">
                     <rect key="frame" x="50" y="17" width="42" height="16"/>
                     <constraints>
@@ -52,11 +80,14 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YjK-gS-Qjk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="3Di-QI-AkN"/>
+                <constraint firstItem="i8p-z9-C48" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Fx-xe-yRv"/>
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7CO-kZ-RvU"/>
+                <constraint firstItem="i8p-z9-C48" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="8IV-GO-k6k"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="leading" secondItem="YjK-gS-Qjk" secondAttribute="leading" id="JIX-5B-h0K"/>
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LAI-Sp-yYv"/>
                 <constraint firstItem="ajx-4g-Ylj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Mr9-Kr-r0W"/>
                 <constraint firstItem="YjK-gS-Qjk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="Rf4-nS-rnE"/>
+                <constraint firstItem="i8p-z9-C48" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="27" id="Vu7-L2-Lza"/>
                 <constraint firstItem="X2A-gu-bDG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WHX-zX-19O"/>
                 <constraint firstItem="ajx-4g-Ylj" firstAttribute="centerY" secondItem="YjK-gS-Qjk" secondAttribute="centerY" id="m7Q-xO-FMO"/>
                 <constraint firstItem="wiJ-q0-zgx" firstAttribute="trailing" secondItem="YjK-gS-Qjk" secondAttribute="trailing" id="sBO-Ii-gsz"/>
