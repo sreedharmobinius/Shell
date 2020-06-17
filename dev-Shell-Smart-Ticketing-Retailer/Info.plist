@@ -60,6 +60,17 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>iOS.dev-Shell-Smart-Ticketing-Retailer</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>SetNewPhoneNo</string>
+			</array>
+		</dict>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

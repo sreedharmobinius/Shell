@@ -17,7 +17,6 @@ class HomeViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var searchView: UIView!
     
     let cellReuseIdentifier = "cell"
-
     
     
     override func viewDidLoad() {

@@ -202,7 +202,7 @@ class NewWorkOrderDetailsViewController: UIViewController, UITableViewDelegate, 
     
     @IBAction func MinimiseButtonClicked(_ sender: Any) {
         let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.HomeStoryBoard, bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.Home) as! HomeTabBarViewController
+        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.HomeViewController) as! HomeTabBarViewController
         controller.modalPresentationStyle = .fullScreen
         controller.prevVC = self
         controller.isMinimised = true
