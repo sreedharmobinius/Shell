@@ -128,7 +128,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "GenerateOTPClicked(_:)"
+            landmarkName = "dismissKeyBoard(_sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -145,22 +145,6 @@
             startingLineNumber = "65"
             endingLineNumber = "65"
             landmarkName = "GenerateOTPClicked(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4B3FF5C5-CC07-4127-97EF-4368F9A8CEFD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "dev-Shell-Smart-Ticketing-Retailer/ViewControllers/Login/LogInViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
-            landmarkName = "callGetStations()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

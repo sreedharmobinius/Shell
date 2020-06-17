@@ -95,16 +95,12 @@ class LogInViewController: UIViewController {
               if let httpResponse = response as? HTTPURLResponse {
               print(httpResponse.statusCode)
                 if(httpResponse.statusCode == 200){
-                    if let data = data{
-                    guard let response = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
-                      print("Error: Couldn't decode data into car")
-                      return
-                    }
+                   
                     DispatchQueue.main.async {
                         let vc = self.storyboard?.instantiateViewController(identifier: StoryBoardConstants.viewIds.HomeViewController) as! HomeViewController
                         self.navigationController?.pushViewController(vc, animated: true)
                     }
-                }
+                
                 }
             }
             } catch {

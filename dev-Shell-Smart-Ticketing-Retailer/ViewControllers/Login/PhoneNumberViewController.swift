@@ -16,6 +16,8 @@ class PhoneNumberViewController: UIViewController {
     var titleString : String?
     var flow : String?
     
+    var userViewModel = UserViewModel()
+    
     fileprivate func configureView() {
         btnGenerateOTP.layer.cornerRadius = 10
         //        numberTextField.layer.cornerRadius = 10
@@ -32,6 +34,10 @@ class PhoneNumberViewController: UIViewController {
         // Do any additional setup after loading the view.
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyBoard(_sender:)))
         self.view.addGestureRecognizer(tapGesture)
+        /*userViewModel.reloadTableView = { [weak self] ()  in
+            guard let `self` = self else {return}
+            //Reload your tableview here
+        }*/
     }
     
     
