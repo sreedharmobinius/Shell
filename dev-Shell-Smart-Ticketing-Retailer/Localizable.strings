@@ -23,3 +23,7 @@
 "SELECT_CATEGORY"= "Select Category";
 "SELECT" = "Select";
 "PLACE_HOLDER_DASH" = "- - - - - - - -";
+"SET_PASSWORD" = "Set Password";
+"NEW_PHONE_NO" = "New Phone No.";
+"CHANGE_PHONE_NO_FLOW" = "ChangePhoneNoFlow";
+
