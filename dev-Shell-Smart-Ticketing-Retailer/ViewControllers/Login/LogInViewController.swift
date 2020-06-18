@@ -111,48 +111,28 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func ForgetPasswordClicked(_ sender: Any) {
-        let spinner = UIActivityIndicatorView()
-        spinner.center = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height/2)
-        self.view.addSubview(spinner)
-        spinner.startAnimating()
-        
         if let mobileNumber = phoneNoTextField.text {
-            
-            let url = URL(string: "http://3.7.238.93/api/auth/otp")!
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
+            self.showProgressHUD()// To show Loding indicator.
             let parameters: [String: Any] = [
                 "user":"\(mobileNumber)",
             ]
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                guard let unwrappedData = data else { return }
-                do {
-                    let str = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments)
-                    print(str)
-                    if let httpResponse = response as? HTTPURLResponse {
-                        print(httpResponse.statusCode)
-                        if(httpResponse.statusCode == 200){
-                            DispatchQueue.main.async {
-                                spinner.stopAnimating()
-                                let vc = self.storyboard?.instantiateViewController(identifier: StoryBoardConstants.viewIds.OTPViewController) as! OTPViewController
-                                vc.shouldShowChangeBanner = true
-                                vc.flow = "ForgetPassword"
-                                vc.user = mobileNumber
-                                self.navigationController?.pushViewController(vc, animated: true)
-                            }
-                        }
+            LoginViewModel().forgotPassword(with: parameters, onCompletion: {(result)in
+                switch result {
+                case .success( _):
+                    DispatchQueue.main.async {
+                        self.dismissProgressHUD()// Stop loading Indicator.
+                        let vc = self.storyboard?.instantiateViewController(identifier: StoryBoardConstants.viewIds.OTPViewController) as! OTPViewController
+                        vc.shouldShowChangeBanner = true
+                        vc.flow = "ForgetPassword"
+                        vc.user = mobileNumber
+                        self.navigationController?.pushViewController(vc, animated: true)
                     }
-                } catch {
-                    print("json error: \(error)")
+                    break;
+                case .failure( _):
+                    break
                 }
-            }
-            task.resume()
+            })
         }
-        
-        
-        
     }
     
     @IBAction func NewUserButtonClicked(_ sender: Any) {

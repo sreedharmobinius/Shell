@@ -54,6 +54,52 @@ class LoginRestManager {
                 break;
             }
         }
+}
+    
+ func forgotPassword(param: Parameters,  onCompletion: @escaping (Result<Any, CustomError>) -> ()) {
+    
+    let urlAPI = RestConstants.BASE_URL + RestConstants.API_ENDPOINT_SEND_OTP
+           
+           RestAPIManager.shared.executeRequest(apiUrl: urlAPI,method: .post, parameters: param) { [weak self](request) in
+            
+              guard let statusCode = request.response?.statusCode else {
+                   onCompletion(.failure(CustomError.NoDataFound))
+                   return
+               }
+               
+               switch statusCode {
+               case RestConstants.HTTP_CODE_OK:
+                   guard let data = request.data else {
+                       // handle errors here
+                       onCompletion(.failure(CustomError.NoDataFound))
+                       return
+                   }
+                   let decoder = JSONDecoder()
+                   do {
+                       let response = try decoder.decode(OTP.self, from: data)
+                       onCompletion(.success(response))
+                   } catch {
+                       onCompletion(.failure(CustomError.ParsingError))
+                   }
+               default:
+                   onCompletion(.failure(.NoDataFound))
+               }
+               
+           }
+    
     }
 }
+
+// To decode the response from data
+struct OTP: Codable {
+       let success: Bool
+       let message: String
+       let payload: [Int]
+
+       enum CodingKeys: String, CodingKey {
+           case success
+           case message
+           case payload
+       }
+   }
 

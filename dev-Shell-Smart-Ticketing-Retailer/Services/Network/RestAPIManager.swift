@@ -18,7 +18,7 @@ class RestAPIManager {
         let headers = getHeaders(forToken: "")
         AF.request(
             apiUrl,
-            method: .get,
+            method: method,
             parameters: parameters,
             headers: headers
             ).responseJSON { request in

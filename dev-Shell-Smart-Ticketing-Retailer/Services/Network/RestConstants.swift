@@ -7,6 +7,7 @@ class RestConstants {
     public static let API_ENDPOINT_GET_WORK_ORDERS: String = "workOrders"
     public static let API_ENDPOINT_GET_WORK_IN_PAGE_LIMIT: String = "/api/todo/done?page=%@&limit=%@&type[]=%@"
     public static let API_ENDPOINT_LOGIN_USER: String = "login"
+    public static let API_ENDPOINT_SEND_OTP: String = "auth/otp"
     
     // Response code
     //
