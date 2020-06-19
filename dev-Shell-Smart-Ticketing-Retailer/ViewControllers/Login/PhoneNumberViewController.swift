@@ -46,48 +46,31 @@ class PhoneNumberViewController: UIViewController {
     }
     
     @IBAction func GenerateOTPClicked(_ sender: Any) {
-        
-        let spinner = UIActivityIndicatorView()
-        spinner.center = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height/2)
-        self.view.addSubview(spinner)
-        spinner.startAnimating()
         if let mobileNumber = numberTextField.text {
-            
-        let url = URL(string: "http://3.7.238.93/api/auth/otp")!
-               var request = URLRequest(url: url)
-               request.httpMethod = "POST"
-               let parameters: [String: Any] = [
-                "user":"manoj.v@mobinius.com",
-               ]
-               request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-               request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
-               let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                   guard let unwrappedData = data else { return }
-                   do {
-                       let str = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments)
-                       print(str)
-                    if let httpResponse = response as? HTTPURLResponse {
-                     print(httpResponse.statusCode)
-                        if(httpResponse.statusCode == 200){
-                             DispatchQueue.main.async {
-                                spinner.stopAnimating()
-                            let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.LoginStoryBoard, bundle: nil)
-                            let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.OTPViewController)as! OTPViewController
-                                controller.user = "manoj.v@mobinius.com"
-                                if let flow = self.flow{
-                                controller.flow = flow
-                                controller.shouldShowChangeBanner = false
-                                }
-                            self.navigationController?.pushViewController(controller, animated: true)
+            self.showProgressHUD()// To show Loding indicator.
+            let parameters: [String: Any] = [
+                "user":"\(mobileNumber)",
+            ]
+            PhoneNumberViewModel().sendOTP(with: parameters, onCompletion: {(result) in
+                switch result {
+                case .success( _):
+                    DispatchQueue.main.async {
+                        self.dismissProgressHUD()// Stop loading Indicator.
+                        let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.LoginStoryBoard, bundle: nil)
+                        let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.OTPViewController)as! OTPViewController
+                        controller.user = "\(mobileNumber)"
+                        if let flow = self.flow{
+                            controller.flow = flow
+                            controller.shouldShowChangeBanner = false
                         }
-                        }
+                        self.navigationController?.pushViewController(controller, animated: true)
                     }
-                   } catch {
-                       print("json error: \(error)")
-                   }
-               }
-               task.resume()
+                    break;
+                case .failure( _):
+                    
+                    break;
+                }
+            })
+        }
     }
-    }
-    
 }

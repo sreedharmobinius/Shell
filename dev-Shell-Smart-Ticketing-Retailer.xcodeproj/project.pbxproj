@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F10CEB5249C9C4D00F0DD60 /* PhoneNumberRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10CEB4249C9C4D00F0DD60 /* PhoneNumberRestManager.swift */; };
+		1F10CEB7249C9E8000F0DD60 /* PhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10CEB6249C9E8000F0DD60 /* PhoneNumberViewModel.swift */; };
+		1F10CEBD249CD14E00F0DD60 /* OTPRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10CEBC249CD14E00F0DD60 /* OTPRestManager.swift */; };
+		1F10CEC1249CEE1700F0DD60 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10CEC0249CEE1700F0DD60 /* OTPViewModel.swift */; };
 		7BB114CF2557EB035E008398 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2EAB3E06DED9E205279B394 /* Pods_dev_Shell_Smart_Ticketing_RetailerTests.framework */; };
 		A076ED75249246DF00993053 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED74249246DF00993053 /* LoginRestManager.swift */; };
 		A076ED76249246DF00993053 /* LoginRestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A076ED74249246DF00993053 /* LoginRestManager.swift */; };
@@ -112,6 +116,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F10CEB4249C9C4D00F0DD60 /* PhoneNumberRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberRestManager.swift; sourceTree = "<group>"; };
+		1F10CEB6249C9E8000F0DD60 /* PhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		1F10CEBC249CD14E00F0DD60 /* OTPRestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPRestManager.swift; sourceTree = "<group>"; };
+		1F10CEC0249CEE1700F0DD60 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
 		2AC00EAD8EBFA32D8DB8A1C4 /* Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-Retailer/Pods-dev-Shell-Smart-Ticketing-Retailer.debug.xcconfig"; sourceTree = "<group>"; };
 		60A9900AB562CF7E6ADE6BA8 /* Pods_dev_Shell_Smart_Ticketing_Retailer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dev_Shell_Smart_Ticketing_Retailer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C871B285E875BBB6FF4189 /* Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; path = "Target Support Files/Pods-dev-Shell-Smart-Ticketing-RetailerTests/Pods-dev-Shell-Smart-Ticketing-RetailerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -291,6 +299,8 @@
 			children = (
 				A076ED792492499200993053 /* LoginViewModel.swift */,
 				A076ED7F24924BA900993053 /* UserViewModel.swift */,
+				1F10CEB6249C9E8000F0DD60 /* PhoneNumberViewModel.swift */,
+				1F10CEC0249CEE1700F0DD60 /* OTPViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,10 +317,12 @@
 			isa = PBXGroup;
 			children = (
 				A0D7A4B4249094FD0017A0CC /* RestAPIManager.swift */,
+				1F10CEB4249C9C4D00F0DD60 /* PhoneNumberRestManager.swift */,
 				A0D7A4B7249099EF0017A0CC /* WorkOrderRestManager.swift */,
 				A0D7A4BA24909AE00017A0CC /* RestConstants.swift */,
 				A076ED74249246DF00993053 /* LoginRestManager.swift */,
 				A076ED932492568F00993053 /* Connectivity.swift */,
+				1F10CEBC249CD14E00F0DD60 /* OTPRestManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -698,6 +710,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F10CEB7249C9E8000F0DD60 /* PhoneNumberViewModel.swift in Sources */,
 				A076ED942492568F00993053 /* Connectivity.swift in Sources */,
 				A0D7A4B5249094FD0017A0CC /* RestAPIManager.swift in Sources */,
 				AF8C82B02465355F00BE3508 /* AppDelegate.swift in Sources */,
@@ -709,6 +722,7 @@
 				A0D7A4B8249099EF0017A0CC /* WorkOrderRestManager.swift in Sources */,
 				AFB574F7246D195B0034109A /* OTPViewController.swift in Sources */,
 				AF6E4F86247BD216004BD793 /* NewWorkOrderDetailViewController.swift in Sources */,
+				1F10CEC1249CEE1700F0DD60 /* OTPViewModel.swift in Sources */,
 				A076ED9824925E8D00993053 /* String+Verifier.swift in Sources */,
 				AF680695248531F40078AD6D /* TableViewHeader.swift in Sources */,
 				A0D7A4C52490A14B0017A0CC /* RegistrationError.swift in Sources */,
@@ -719,6 +733,7 @@
 				AF72758C246AB3E9002AD121 /* LogInViewController.swift in Sources */,
 				AF959E872477C45B0082076C /* NewWorkOrderViewController.swift in Sources */,
 				AF733A97248D48B200284239 /* DefaultTableViewCell.swift in Sources */,
+				1F10CEB5249C9C4D00F0DD60 /* PhoneNumberRestManager.swift in Sources */,
 				A076ED7D24924B8100993053 /* User.swift in Sources */,
 				A076ED8024924BA900993053 /* UserViewModel.swift in Sources */,
 				AF682D40248B781700324D83 /* WorkOrderDetailHeaderCell.swift in Sources */,
@@ -740,6 +755,7 @@
 				AF6880D42473F19900D50BAA /* HomeViewController.swift in Sources */,
 				A0D7A4BE2490A0190017A0CC /* CustomError.swift in Sources */,
 				AF6AB1012487E15200E9B712 /* SelectedAreaView.swift in Sources */,
+				1F10CEBD249CD14E00F0DD60 /* OTPRestManager.swift in Sources */,
 				AF8C82B22465355F00BE3508 /* SceneDelegate.swift in Sources */,
 				AF8C82BA2465355F00BE3508 /* dev_Shell_Smart_Ticketing_Retailer.xcdatamodeld in Sources */,
 				AFB574F9246D19E60034109A /* EmailFVerificationViewController.swift in Sources */,

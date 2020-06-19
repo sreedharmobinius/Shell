@@ -110,51 +110,42 @@ class OTPViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func SubmitButtonClicked(_ sender: Any) {
-        let spinner = UIActivityIndicatorView()
-        spinner.center = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height/2)
-        self.view.addSubview(spinner)
-        spinner.startAnimating()
+        
         if let otp1 = textField1.text, let otp2 = textField2.text, let otp3 = textField3.text, let otp4 = textField4.text, let user = self.user {
-            let otpString = "\(otp1)\(otp2)\(otp3)\(otp4)"      
+            self.showProgressHUD()// To show Loding indicator.
+            let otpString = "\(otp1)\(otp2)\(otp3)\(otp4)"
             
-            let url = URL(string: "http://3.7.238.93/api/auth/otp?user=\(user)&otp=\(otpString)&changePhonenumber=false")!
-            var request = URLRequest(url: url)
-            request.httpMethod = "GET"
-            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-                guard let unwrappedData = data else { return }
-                do {
-                    let str = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments)
-                    print(str)
-                    if let httpResponse = response as? HTTPURLResponse {
-                        print(httpResponse.statusCode)
-                        if(httpResponse.statusCode == 200){
-                            if (self.flow == NSLocalizedString("CHANGE_PHONE_NO_FLOW", comment: "CHANGE_PHONE_NO_FLOW")){
-                                DispatchQueue.main.async {
-                                    spinner.stopAnimating()
-                                let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.HomeStoryBoard, bundle: nil)
-                                let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.HomeViewController)
-                                self.navigationController?.pushViewController(controller, animated: true)
-                                }
-                            }else {
-                            DispatchQueue.main.async {
-                                spinner.stopAnimating()
+            let parameters: String  = "?user=\(user)&otp=\(otpString)&changePhonenumber=false"
+            
+            OTPViewModel().verifyOTP(with: parameters, onCompletion: {(result) in
+                switch result {
+                case .success( _):
+                    DispatchQueue.main.async {
+                        if (self.flow == NSLocalizedString("CHANGE_PHONE_NO_FLOW", comment: "CHANGE_PHONE_NO_FLOW")){
+                            self.dismissProgressHUD()// Stop loading Indicator.
+                            let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.HomeStoryBoard, bundle: nil)
+                            let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.HomeViewController)
+                            self.navigationController?.pushViewController(controller, animated: true)
+                        }else {
+                            self.dismissProgressHUD()// Stop loading Indicator.
                             let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.LoginStoryBoard, bundle: nil)
                             let controller = storyboard.instantiateViewController(withIdentifier: StoryBoardConstants.viewIds.PassWordViewController)as! PassWordViewController
                             controller.titleString = NSLocalizedString("SET_PASSWORD", comment: "SET_PASSWORD")
                             controller.user = self.user
                             controller.flow = self.flow
                             self.navigationController?.pushViewController(controller, animated: true)
-                        }
-                        }
+
                         }
                     }
-                } catch {
-                    print("json error: \(error)")
+                    break;
+                case .failure( _):
+
+                    break;
                 }
-            }
-            task.resume()
+            })
         }
     }
+    
     
     @IBAction func ChangePhoneNoClicked(_ sender: Any) {
         let storyboard = UIStoryboard(name: StoryBoardConstants.storyBoards.LoginStoryBoard, bundle: nil)

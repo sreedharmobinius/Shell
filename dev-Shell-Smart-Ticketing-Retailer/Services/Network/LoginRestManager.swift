@@ -58,7 +58,7 @@ class LoginRestManager {
     
  func forgotPassword(param: Parameters,  onCompletion: @escaping (Result<Any, CustomError>) -> ()) {
     
-    let urlAPI = RestConstants.BASE_URL + RestConstants.API_ENDPOINT_SEND_OTP
+    let urlAPI = RestConstants.BASE_URL + RestConstants.API_ENDPOINT_SENT_OTP
            
            RestAPIManager.shared.executeRequest(apiUrl: urlAPI,method: .post, parameters: param) { [weak self](request) in
             
@@ -89,17 +89,4 @@ class LoginRestManager {
     
     }
 }
-
-// To decode the response from data
-struct OTP: Codable {
-       let success: Bool
-       let message: String
-       let payload: [Int]
-
-       enum CodingKeys: String, CodingKey {
-           case success
-           case message
-           case payload
-       }
-   }
 
